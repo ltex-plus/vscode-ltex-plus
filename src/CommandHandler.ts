@@ -438,7 +438,7 @@ export default class CommandHandler {
           enabledFileExtensions.add('py');
           break;
         }
-        case 'quatro': {
+        case 'quarto': {
           enabledFileExtensions.add('qmd');
           break;
         }
