@@ -2662,7 +2662,7 @@
     "typescript": "5.7.2",
     "webpack": "5.97.1",
     "webpack-cli": "6.0.1",
-    "glob": "11.0.0"
+    "glob": "11.0.1"
   },
   "dependencies": {
     "extract-zip": "2.0.1",
