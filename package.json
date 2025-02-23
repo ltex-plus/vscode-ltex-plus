@@ -1,7 +1,7 @@
 {
   "name": "vscode-ltex-plus",
   "displayName": "LTeX+ – grammar/spell checking using LanguageTool",
-  "version": "15.5.0-alpha",
+  "version": "15.5.1-alpha",
   "description": "Grammar/spell checker using LanguageTool with support for LaTeX, Markdown, and others",
   "icon": "img/logo-ltex.png",
   "author": "Julian Valentin",
@@ -66,6 +66,7 @@
     "onLanguage:quarto",
     "onLanguage:restructuredtext",
     "onLanguage:rsweave",
+    "onLanguage:amd",
     "onNotebook:*"
   ],
   "contributes": {
@@ -162,7 +163,8 @@
             "org",
             "quarto",
             "restructuredtext",
-            "rsweave"
+            "rsweave",
+            "amd"
           ],
           "markdownDescription": "%ltex.i18n.configuration.ltex.enabled.markdownDescription%",
           "examples": [
@@ -177,7 +179,7 @@
         "ltex.language": {
           "type": "string",
           "scope": "resource",
-          "default": "en-US",
+          "default": "en-NZ",
           "enum": [
             "auto",
             "ar",
@@ -2163,7 +2165,7 @@
         "ltex.additionalRules.enablePickyRules": {
           "type": "boolean",
           "scope": "resource",
-          "default": false,
+          "default": true,
           "markdownDescription": "%ltex.i18n.configuration.ltex.additionalRules.enablePickyRules.markdownDescription%"
         },
         "ltex.additionalRules.motherTongue": {
@@ -2429,7 +2431,7 @@
         "ltex.completionEnabled": {
           "type": "boolean",
           "scope": "resource",
-          "default": false,
+          "default": true,
           "markdownDescription": "%ltex.i18n.configuration.ltex.completionEnabled.markdownDescription%"
         },
         "ltex.diagnosticSeverity": {
