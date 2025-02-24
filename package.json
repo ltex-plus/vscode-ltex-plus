@@ -1,8 +1,8 @@
 {
   "name": "vscode-ltex-plus",
-  "displayName": "LTeX+ – grammar/spell checking using LanguageTool",
-  "version": "15.5.1-alpha",
-  "description": "Grammar/spell checker using LanguageTool with support for LaTeX, Markdown, and others",
+  "displayName": "LTeX+ – BRE grammar/spell checking using LanguageTool",
+  "version": "15.5.2-bre",
+  "description": "Grammar/spell checker using LanguageTool with support for LaTeX, Markdown, and others. Updated for BRE",
   "icon": "img/logo-ltex.png",
   "author": "Julian Valentin",
   "publisher": "ltex-plus",
