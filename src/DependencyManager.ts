@@ -515,6 +515,20 @@ export default class DependencyManager {
         this._ltexLsPath!, 'bin', (DependencyManager._isWindows
           ? 'ltex-ls-plus.bat' : 'ltex-ls-plus'));
 
+    if (!DependencyManager._isWindows) {
+      const cwd = this._ltexLsPath!;
+      var directories = Fs.readdirSync(cwd).filter(function (file) {
+        return Fs.statSync(Path.join(cwd, file)).isDirectory() && file.startsWith("jdk-");
+      });
+
+      const jdkExecutablePath: string = Path.join(
+        cwd, directories[0], 'bin', 'java'
+      );
+
+      Fs.chmodSync(ltexLsScriptPath, 0o755);
+      Fs.chmodSync(jdkExecutablePath, 0o755);    
+    }
+    
     const workspaceConfig: Code.WorkspaceConfiguration = Code.workspace.getConfiguration('ltex');
     const initialJavaHeapSize: number | undefined = workspaceConfig.get('java.initialHeapSize');
     const maximumJavaHeapSize: number | undefined = workspaceConfig.get('java.maximumHeapSize');
