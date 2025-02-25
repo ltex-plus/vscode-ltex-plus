@@ -516,9 +516,9 @@ export default class DependencyManager {
           ? 'ltex-ls-plus.bat' : 'ltex-ls-plus'));
 
     if (!DependencyManager._isWindows) {
-      const cwd = this._ltexLsPath!;
-      var directories = Fs.readdirSync(cwd).filter(function (file) {
-        return Fs.statSync(Path.join(cwd, file)).isDirectory() && file.startsWith("jdk-");
+      const cwd: string = this._ltexLsPath!;
+      const directories: string[] = Fs.readdirSync(cwd).filter(function (file: string) {
+        return Fs.statSync(Path.join(cwd, file)).isDirectory() && file.startsWith('jdk-');
       });
 
       const jdkExecutablePath: string = Path.join(
