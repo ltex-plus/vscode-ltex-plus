@@ -19,7 +19,7 @@ export default class ExtensionInitializer {
     if (ExtensionInitializer._languageClient != null) return Promise.resolve();
 
     const ltex: Code.Extension<Ltex.Api> | undefined =
-        Code.extensions.getExtension('ltex-plus.vscode-ltex-plus');
+        Code.extensions.getExtension('ltex-bre.vscode-ltex-bre');
     if (ltex == null) return Promise.reject(new Error('Could not find LTeX.'));
 
     Code.workspace.getConfiguration('ltex').update('trace.server', 'messages',

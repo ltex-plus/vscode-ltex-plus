@@ -1,11 +1,11 @@
 {
-  "name": "vscode-ltex-plus",
-  "displayName": "LTeX+ – BRE grammar/spell checking using LanguageTool",
-  "version": "15.5.4-bre",
+  "name": "vscode-ltex-bre",
+  "displayName": "BRE LTeX+ – grammar/spell checking using LanguageTool",
+  "version": "15.5.5-bre",
   "description": "Grammar/spell checker using LanguageTool with support for LaTeX, Markdown, and others. Updated for BRE",
   "icon": "img/logo-ltex.png",
-  "author": "Julian Valentin",
-  "publisher": "ltex-plus",
+  "author": "Nick Lauder",
+  "publisher": "ltex-bre",
   "contributors": [
     "Julian Valentin",
     "Daniel Spitzer"
@@ -14,15 +14,12 @@
   "homepage": "https://ltex-plus.github.io/ltex-plus/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ltex-plus/vscode-ltex-plus"
+    "url": "https://github.com/zxsecurity/vscode-ltex-bre"
   },
   "bugs": {
-    "url": "https://github.com/ltex-plus/vscode-ltex-plus/issues"
+    "url": "https://github.com/zxsecurity/vscode-ltex-bre/issues"
   },
-  "qna": "https://github.com/ltex-plus/vscode-ltex-plus/discussions",
-  "sponsor": {
-    "url": "https://ko-fi.com/spitzerd"
-  },
+  "qna": "https://github.com/zxsecurity/vscode-ltex-bre/discussions",
   "engines": {
     "vscode": "^1.82.0"
   },

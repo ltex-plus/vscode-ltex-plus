@@ -68,7 +68,7 @@ async function runTestIteration(useOfflinePackage:boolean): Promise<void> {
       let architecture: string = 'x64';
       if (process.arch == 'arm64') architecture = 'aarch64';
       cliArgs.push('--install-extension', Path.join(ltexDirPath,
-          `vscode-ltex-plus-${ltexVersion}-offline-${platform}-${architecture}.vsix`));
+          `vscode-ltex-bre-${ltexVersion}-offline-${platform}-${architecture}.vsix`));
     }
 
     console.log('Calling Code CLI for extension installation...');
@@ -93,7 +93,7 @@ async function runTestIteration(useOfflinePackage:boolean): Promise<void> {
       console.log(`Removing '${ltexLibDirPath}'...`);
       Rimraf.sync(ltexLibDirPath);
       const ltexOfflineLibDirPath: string =
-          Path.join(extensionsDirPath, `ltex-plus.vscode-ltex-plus-${ltexVersion}`, 'lib');
+          Path.join(extensionsDirPath, `ltex-bre.vscode-ltex-bre-${ltexVersion}`, 'lib');
       console.log(`Moving '${ltexOfflineLibDirPath}' to '${ltexLibDirPath}'...`);
       Fs.renameSync(ltexOfflineLibDirPath, ltexLibDirPath);
     }

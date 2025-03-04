@@ -7,7 +7,7 @@
    - file, You can obtain one at https://mozilla.org/MPL/2.0/.
    -->
 
-# LT<sub>E</sub>X+ Extension for VS Code: Grammar/Spell Checker Using LanguageTool with Support for L<sup>A</sup>T<sub>E</sub>X, Markdown, and Others
+# BRE LT<sub>E</sub>X+ Extension for VS Code: Grammar/Spell Checker Using LanguageTool with Support for L<sup>A</sup>T<sub>E</sub>X, Markdown, and Others
 
 **LT<sub>E</sub>X+** provides offline grammar checking of various markup languages in Visual Studio Code using [LanguageTool (LT)](https://languagetool.org/). LT<sub>E</sub>X+ currently supports:
 - L<sup>A</sup>T<sub>E</sub>X, BibT<sub>E</sub>X, ConT<sub>E</sub>Xt and rsweave

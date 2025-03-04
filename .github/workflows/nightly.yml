@@ -25,7 +25,7 @@ jobs:
         uses: "actions/checkout@v4"
 
       - id: "check_latest_commit"
-        name: "Check if there were any commits in the last 48 hours for vscode-ltex-plus"
+        name: "Check if there were any commits in the last 48 hours for vscode-ltex-bre"
         run: echo 'NEW_COMMIT='$(test -n "$(git log --format=%H --since='48 hours ago')" && echo 'true' || echo 'false') >> $GITHUB_OUTPUT
       
       - name: "Checkout Repository"

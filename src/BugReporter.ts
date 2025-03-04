@@ -26,7 +26,7 @@ export default class BugReporter {
   private static readonly _maxNumberOfConfigLines: number = 1000;
   private static readonly _maxNumberOfServerLogLines: number = 100;
   private static readonly _maxNumberOfClientLogLines: number = 1000;
-  private static readonly _bugReportUrl: string = 'https://github.com/ltex-plus/vscode-ltex-plus/'
+  private static readonly _bugReportUrl: string = 'https://github.com/zxsecurity/vscode-ltex-bre/'
       + 'issues/new?assignees=&labels=1-bug%20%F0%9F%90%9B%2C+2-unconfirmed&'
       + 'template=bug-report.md&title=&body=';
 
@@ -113,11 +113,11 @@ export default class BugReporter {
 
     // deprecated: replace with self._context.extension starting with VS Code 1.55.0
     const extension: Code.Extension<any> | undefined =
-        Code.extensions.getExtension('ltex-plus.vscode-ltex-plus');
+        Code.extensions.getExtension('ltex-bre.vscode-ltex-bre');
 
     if (extension != null) {
       bugReport = bugReport.replace(/^- vscode-ltex: .*$/m,
-          `- vscode-ltex-plus: ${extension.packageJSON.version}`);
+          `- vscode-ltex-bre: ${extension.packageJSON.version}`);
     }
 
     if (this._dependencyManager != null) {

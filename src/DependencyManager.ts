@@ -63,7 +63,7 @@ export default class DependencyManager {
     this._context = context;
     // deprecated: replace with context.extension starting with VS Code 1.55.0
     const vscodeLtexExtension: Code.Extension<any> | undefined =
-        Code.extensions.getExtension('ltex-plus.vscode-ltex-plus');
+        Code.extensions.getExtension('ltex-bre.vscode-ltex-bre');
     if (vscodeLtexExtension == null) throw new Error(i18n('couldNotGetVscodeLtexVersion'));
     this._vscodeLtexVersion = vscodeLtexExtension.packageJSON.version;
   }
