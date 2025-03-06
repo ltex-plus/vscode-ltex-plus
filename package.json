@@ -1,7 +1,7 @@
 {
   "name": "vscode-ltex-bre",
   "displayName": "BRE LTeX+ – grammar/spell checking using LanguageTool",
-  "version": "15.5.6",
+  "version": "15.5.7-alpha",
   "description": "Grammar/spell checker using LanguageTool with support for LaTeX, Markdown, and others. Updated for BRE",
   "icon": "img/logo-ltex.png",
   "author": "Nick Lauder",
