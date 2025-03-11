@@ -68,7 +68,7 @@ async function runTestIteration(useOfflinePackage:boolean): Promise<void> {
       let architecture: string = 'x64';
       if (process.arch == 'arm64') architecture = 'aarch64';
       cliArgs.push('--install-extension', Path.join(ltexDirPath,
-          `vscode-ltex-bre-${ltexVersion}-offline-${platform}-${architecture}.vsix`));
+          `vscode-ltex-bre-offline-${platform}-${architecture}.vsix`));
     }
 
     console.log('Calling Code CLI for extension installation...');
