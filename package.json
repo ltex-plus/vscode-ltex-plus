@@ -66,6 +66,7 @@
     "onLanguage:quarto",
     "onLanguage:restructuredtext",
     "onLanguage:rsweave",
+    "onLanguage:amd",
     "onNotebook:*"
   ],
   "contributes": {
@@ -162,7 +163,8 @@
             "org",
             "quarto",
             "restructuredtext",
-            "rsweave"
+            "rsweave",
+            "amd"
           ],
           "markdownDescription": "%ltex.i18n.configuration.ltex.enabled.markdownDescription%",
           "examples": [
