@@ -103,11 +103,11 @@ jobs:
           --prerelease=true
           --title='${{ env.VSCODE_LTEX_VERSION }}'
           --notes='This is a nightly build. Use at your own risk.'
-          'vscode-ltex-bre-${{ env.VSCODE_LTEX_VERSION }}-offline-linux-x64.vsix'
-          'vscode-ltex-bre-${{ env.VSCODE_LTEX_VERSION }}-offline-mac-x64.vsix'
-          'vscode-ltex-bre-${{ env.VSCODE_LTEX_VERSION }}-offline-windows-x64.vsix'
-          'vscode-ltex-bre-${{ env.VSCODE_LTEX_VERSION }}-offline-linux-aarch64.vsix'
-          'vscode-ltex-bre-${{ env.VSCODE_LTEX_VERSION }}-offline-mac-aarch64.vsix'
-          'vscode-ltex-bre-${{ env.VSCODE_LTEX_VERSION }}-offline-windows-aarch64.vsix'
+          'vscode-ltex-bre-offline-linux-x64.vsix'
+          'vscode-ltex-bre-offline-mac-x64.vsix'
+          'vscode-ltex-bre-offline-windows-x64.vsix'
+          'vscode-ltex-bre-offline-linux-aarch64.vsix'
+          'vscode-ltex-bre-offline-mac-aarch64.vsix'
+          'vscode-ltex-bre-offline-windows-aarch64.vsix'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
