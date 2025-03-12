@@ -11,7 +11,7 @@
   "ltex.i18n.walkthrough.applyQuickFixes.description": "Quickly fix errors in your document.",
   "ltex.i18n.walkthrough.applyQuickFixes.markdownPath": "walkthrough/en/applyQuickFixes.md",
   "ltex.i18n.walkthrough.customizeSettings.title": "Customize settings",
-  "ltex.i18n.walkthrough.customizeSettings.description": "Configure LTeX+ by opening its settings.\n\n[Open LTeX+ Settings](command:toSide:workbench.action.openSettings?%22@ext:valentjn.vscode-ltex%22)",
+  "ltex.i18n.walkthrough.customizeSettings.description": "Configure LTeX+ by opening its settings.\n\n[Open LTeX+ Settings](command:toSide:workbench.action.openSettings?%22@ext:ltex-plus.vscode-ltex-plus%22)",
   "ltex.i18n.walkthrough.customizeSettings.markdownPath": "walkthrough/en/customizeSettings.md",
   "ltex.i18n.walkthrough.readDocumentation.title": "Read documentation",
   "ltex.i18n.walkthrough.readDocumentation.description": "For more information and more advanced features, read LTeX+'s extensive documentation.\n\n[Open Documentation](https://ltex-plus.github.io/ltex-plus)",
