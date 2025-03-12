@@ -11,4 +11,4 @@ Lesen Sie die Dokumentation, wenn Sie mehr über LT<sub>E</sub>Xs fortgeschritte
 
 Die Dokumentation beinhaltet außerdem eine Liste von häufig gestellten Fragen (FAQ) und Informationen über Einstellungen, Befehle und kürzlich erfolgten Änderungen von LT<sub>E</sub>X.
 
-Klicken Sie auf den Knopf *Dokumentation öffnen,* um die Dokumentation von LT<sub>E</sub>X in einem neuen Browserfenster zu öffnen.
+Klicken Sie auf den Knopf *Dokumentation öffnen,* um die Dokumentation von LT<sub>E</sub>X+ in einem neuen Browserfenster zu öffnen.

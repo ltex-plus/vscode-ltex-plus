@@ -9,4 +9,4 @@ Be sure to check the documentation if you want to learn more about LT<sub>E</sub
 
 The documentation also includes a list of frequently asked questions (FAQ) and information about settings, commands, and recent changes of LT<sub>E</sub>X.
 
-Click on the *Open Documentation* button to open the documentation of LT<sub>E</sub>X in a new browser window.
+Click on the *Open Documentation* button to open the documentation of LT<sub>E</sub>X+ in a new browser window.

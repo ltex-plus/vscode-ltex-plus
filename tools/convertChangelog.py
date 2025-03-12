@@ -68,7 +68,7 @@ def convertChangelogFromXmlToMarkdown(xmlFilePath: pathlib.Path,
 #     markdown += """
 # ## Upcoming Fundamental Changes
 
-# - New versions of LT<sub>E</sub>X released on or after January 14, 2022, will require VS Code 1.61.0 or later
+# - New versions of LT<sub>E</sub>X+ released on or after January 14, 2022, will require VS Code 1.61.0 or later
 # """
   else:
     markdown = ""

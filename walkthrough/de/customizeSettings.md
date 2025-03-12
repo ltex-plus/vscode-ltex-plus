@@ -2,9 +2,9 @@
 
 # Einstellungen anpassen
 
-LT<sub>E</sub>X bietet eine Vielzahl von Einstellungen, mit denen das Prüfverhalten angepasst werden kann.
+LT<sub>E</sub>X+ bietet eine Vielzahl von Einstellungen, mit denen das Prüfverhalten angepasst werden kann.
 
-Klicken Sie auf den Knopf *LTeX-Einstellungen öffnen,* um die Einstellungen von LT<sub>E</sub>X zu öffnen. Sie können dies auch per Hand erledigen, indem Sie den Befehl *Einstellungen: Einstellungen öffnen (Benutzeroberfläche)* in der Befehlspalette (`Strg+Shift+P`) ausführen und auf der linken Seite auf *Erweiterungen* &#x203a; *LTeX* klicken.
+Klicken Sie auf den Knopf *LTeX-Einstellungen öffnen,* um die Einstellungen von LT<sub>E</sub>X+ zu öffnen. Sie können dies auch per Hand erledigen, indem Sie den Befehl *Einstellungen: Einstellungen öffnen (Benutzeroberfläche)* in der Befehlspalette (`Strg+Shift+P`) ausführen und auf der linken Seite auf *Erweiterungen* &#x203a; *LTeX* klicken.
 
 Einige Einstellungen sind:
 

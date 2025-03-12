@@ -6,7 +6,7 @@ Um Dokumente in einer Sprache wie L<sup>A</sup>T<sub>E</sub>X, die standardmäß
 
 Um zum Beispiel L<sup>A</sup>T<sub>E</sub>X-Dokumente zu prüfen, installieren Sie die Erweiterung *LaTeX Workshop,* indem Sie auf den Knopf *LaTeX Workshop installieren* drücken.
 
-Nachdem Sie *LaTeX Workshop* installiert haben, klicken Sie auf den Knopf *LaTeX-Beispiel öffnen,* um das folgende Beispieldokument in einem neuen Editor zu öffnen. Nach einer kurzen Zeit wird LT<sub>E</sub>X zwei Fehler unterstreichen.
+Nachdem Sie *LaTeX Workshop* installiert haben, klicken Sie auf den Knopf *LaTeX-Beispiel öffnen,* um das folgende Beispieldokument in einem neuen Editor zu öffnen. Nach einer kurzen Zeit wird LT<sub>E</sub>X+ zwei Fehler unterstreichen.
 
 ```latex
 \section{\LaTeX{} Example}

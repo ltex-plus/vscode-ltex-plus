@@ -1,6 +1,6 @@
 # Apply Quick Fixes
 
-When moving your mouse over an error, LT<sub>E</sub>X shows a message with details.
+When moving your mouse over an error, LT<sub>E</sub>X+ shows a message with details.
 
 For example, when you hover over `speling` in this Markdown example&hellip;
 
@@ -8,7 +8,7 @@ For example, when you hover over `speling` in this Markdown example&hellip;
 This is a sentence *with a speling error in it.*
 ```
 
-&hellip; LT<sub>E</sub>X will show the following message:
+&hellip; LT<sub>E</sub>X+ will show the following message:
 
 ```plaintext
 'speling': Possible spelling mistake found. – MORFOLOGIK_RULE_EN_US

@@ -2,7 +2,7 @@
 
 # Schnelle Problembehebungen anwenden
 
-Wenn Sie mit der Maus über einen Fehler fahren, zeigt LT<sub>E</sub>X eine Meldung mit Details an.
+Wenn Sie mit der Maus über einen Fehler fahren, zeigt LT<sub>E</sub>X+ eine Meldung mit Details an.
 
 Wenn Sie zum Beispiel über `speling` in diesem Markdown-Beispiel fahren &hellip;
 
@@ -10,7 +10,7 @@ Wenn Sie zum Beispiel über `speling` in diesem Markdown-Beispiel fahren &hellip
 This is a sentence *with a speling error in it.*
 ```
 
-&hellip; dann zeigt LT<sub>E</sub>X folgende Meldung an:
+&hellip; dann zeigt LT<sub>E</sub>X+ folgende Meldung an:
 
 ```plaintext
 'speling': Possible spelling mistake found. – MORFOLOGIK_RULE_EN_US

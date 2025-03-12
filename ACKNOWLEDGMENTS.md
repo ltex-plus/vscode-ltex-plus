@@ -9,7 +9,7 @@
 
 # Acknowledgments
 
-## LT<sub>E</sub>X and LanguageTool Extension for Visual Studio Code
+## LT<sub>E</sub>X+ and LanguageTool Extension for Visual Studio Code
 
 Until version 13.1.0, Julian Valentin developed LT<sub>E</sub>X+ as [LT<sub>E</sub>X](https://github.com/valentjn/vscode-ltex). 
 LT<sub>E</sub>X is a fork of the abandoned [LanguageTool for Visual Studio Code extension](https://github.com/adamvoss/vscode-languagetool). This extension would not have been possible without the work of Adam Voss and Julian Valentin.
