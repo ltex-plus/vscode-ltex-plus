@@ -13,6 +13,7 @@
 - L<sup>A</sup>T<sub>E</sub>X, BibT<sub>E</sub>X, ConT<sub>E</sub>Xt and rsweave
 - Markdown, MDX and Quarto
 - Typst
+- AsciiDoc
 - Org and Neorg
 - reStructuredText
 - XHTML

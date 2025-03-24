@@ -289,6 +289,11 @@ export default class CommandHandler {
 
     for (const codeLanguageId of enabledCodeLanguageIds) {
       switch (codeLanguageId) {
+        case 'asciidoc': {
+          enabledFileExtensions.add('adoc');
+          enabledFileExtensions.add('asciidoc');
+          break;
+        }
         case 'bibtex': {
           enabledFileExtensions.add('bib');
           break;

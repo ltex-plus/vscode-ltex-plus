@@ -17,6 +17,9 @@
       <action type="add" issue="ltex-plus/ltex-ls-plus#55">
         Add support for Neorg
       </action>
+      <action type="add" issue="#128">
+        Add support for AsciiDoc
+      </action>
       <action type="fix" issue="#138">
         "Open LTeX+ settings" button on Walkthrough takes to old settings page
       </action>
