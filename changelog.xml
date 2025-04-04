@@ -13,12 +13,30 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
-    <release version="15.5.0" date="upcoming">
+    <release version="15.5.0" description="The AsciiDoc Sublimation" date="2025-04-04">
+      <action type="add" issue="#128">
+        Add support for AsciiDoc
+      </action>
+      <action type="add" issue="ltex-plus/ltex-ls-plus#69">
+        Add support for \NewDoumentCommand, \NewDocumentEnvironment, \NewExpandableDocumentCommand, \NewCommandCopy, \NewEnvironmentCopy, \IfNoValueTF, \IfValueTF, \IfBlankTF, \IfBooleanTF and many more (LaTeX)
+      </action>
       <action type="add" issue="ltex-plus/ltex-ls-plus#55">
         Add support for Neorg
       </action>
-      <action type="add" issue="#128">
-        Add support for AsciiDoc
+      <action type="update">
+        Update LanguageTool 6.6 (see [LT release notes](https://github.com/languagetool-org/languagetool/blob/v6.6/languagetool-standalone/CHANGES.md))
+      </action>
+      <action type="update">
+        Update to LTeX+ LS 18.5.0. See [ltex-ls-plus release notes](https://github.com/ltex-plus/ltex-ls-plus/releases/tag/18.5.0).
+      </action>
+      <action type="update">
+        Update bundled Java runtime from 21.0.4+7 to 21.0.5+11. No separate beta Java runtime build is required anymore for Windows aarch64.
+      </action>
+      <action type="fix" issue="ltex-plus/ltex-ls-plus#72">
+        Fix false positives in Typst
+      </action>
+      <action type="fix" issue="ltex-plus/ltex-ls-plus#74">
+        Ignore code blocks and raw text in Typst
       </action>
       <action type="fix" issue="#138">
         "Open LTeX+ settings" button on Walkthrough takes to old settings page
