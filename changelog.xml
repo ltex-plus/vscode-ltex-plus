@@ -13,7 +13,7 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
-    <release version="15.5.1" date="2025-04-09">
+    <release version="15.5.1" description="The languageToolHttpServerUri Diremption" date="2025-04-09">
       <action type="fix" issue="ltex-plus/ltex-ls-plus#85">
         Fix slash issue in HTTP URI
       </action>
