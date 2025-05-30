@@ -2573,6 +2573,18 @@
           "default": "",
           "markdownDeprecationMessage": "**Deprecated:** This setting has been renamed to [`ltex.languageToolOrg.apiKey`](https://ltex-plus.github.io/vscode-ltex-plus/docs/settings.html#ltexlanguagetoolorgapikey).",
           "deprecationMessage": "Deprecated: This setting has been renamed to 'ltex.languageToolOrg.apiKey', see https://ltex-plus.github.io/vscode-ltex-plus/docs/settings.html#ltexlanguagetoolorgapikey."
+        },
+        "ltex.languageDetectionMapping": {
+          "type": "object",
+          "scope": "resource",
+          "default": {},
+          "markdownDescription": "Optional mapping from detected language codes to the language mode to use for grammar checking. If set, when language detection is enabled (ltex.language = 'auto'), the detected language will be mapped using this object. For example, to always use British English for detected English, use: { \"en\": \"en-GB\" }. Unmapped languages will use the detected language by default.",
+          "examples": [
+            {
+              "en": "en-GB",
+              "zh-CN": "zh-CN"
+            }
+          ]
         }
       }
     },

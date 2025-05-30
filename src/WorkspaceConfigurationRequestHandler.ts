@@ -112,8 +112,23 @@ export default class WorkspaceConfigurationRequestHandler {
   public handle(params: {items: ConfigurationItem[]}): ConfigurationResultItem[] {
     const result: ConfigurationResultItem[] = [];
 
+    // Get language detection mapping from configuration
+    const globalConfig = Code.workspace.getConfiguration('ltex');
+    const languageDetectionMapping = globalConfig.get<{[key: string]: string}>('languageDetectionMapping', {});
+    const languageSetting = globalConfig.get<string>('language', 'en-US');
+
     for (const item of params.items) {
       const uri: Code.Uri = Code.Uri.parse(item.scopeUri);
+      // If language is set to 'auto', apply mapping if available
+      let effectiveLanguage = languageSetting;
+      if (languageSetting === 'auto') {
+        // Here, you would get the detected language from the document context or LSP (not available here),
+        // so this is a placeholder for where the mapping logic would be applied.
+        // For demonstration, we show how to use the mapping:
+        // const detectedLanguage = ...
+        // effectiveLanguage = languageDetectionMapping[detectedLanguage] || detectedLanguage;
+        // The actual detection should be handled where the detected language is known.
+      }
       result.push({
         dictionary: this.mergeSettings(uri, 'dictionary'),
         disabledRules: this.mergeSettings(uri, 'disabledRules'),
