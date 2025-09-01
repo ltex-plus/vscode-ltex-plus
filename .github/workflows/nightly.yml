@@ -22,14 +22,14 @@ jobs:
       LTEX_LS_PLUS_NEW_COMMIT: ${{ steps.check_latest_commit_ltex-ls-plus.outputs.NEW_COMMIT }}
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v5"
 
       - id: "check_latest_commit"
         name: "Check if there were any commits in the last 48 hours for vscode-ltex-plus"
         run: echo 'NEW_COMMIT='$(test -n "$(git log --format=%H --since='48 hours ago')" && echo 'true' || echo 'false') >> $GITHUB_OUTPUT
       
       - name: "Checkout Repository"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v5"
         with:
           repository: ltex-plus/ltex-ls-plus
           path: ltex-ls-plus
@@ -48,7 +48,7 @@ jobs:
 
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v5"
 
       - name: "Set up Node.js"
         uses: "actions/setup-node@v4"
