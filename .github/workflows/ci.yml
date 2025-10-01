@@ -45,7 +45,7 @@ jobs:
         run: "npm install && npm install -g @vscode/vsce"
 
       - name: "Set up Python"
-        uses: "actions/setup-python@v5"
+        uses: "actions/setup-python@v6"
         with:
           python-version: "3.13"
 
@@ -92,7 +92,7 @@ jobs:
         uses: "actions/checkout@v5"
 
       - name: "Set up Python"
-        uses: "actions/setup-python@v5"
+        uses: "actions/setup-python@v6"
         with:
           python-version: "3.13"
 
@@ -128,7 +128,7 @@ jobs:
         run: "npm install && npm install -g @vscode/vsce ovsx"
 
       - name: "Set up Python"
-        uses: "actions/setup-python@v5"
+        uses: "actions/setup-python@v6"
         with:
           python-version: "3.13"
 
