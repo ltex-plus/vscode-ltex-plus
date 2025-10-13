@@ -27,7 +27,7 @@ def getLatestLtexLsVersion(versions: Iterable[str],
   latestVersion = None
 
   for versionString in versions:
-    if semver.VersionInfo.isvalid(versionString):
+    if semver.VersionInfo.is_valid(versionString):
       version = semver.VersionInfo.parse(versionString)
 
       if ((allowPrerelease or (version.prerelease is None)) and
