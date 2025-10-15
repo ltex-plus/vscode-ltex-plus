@@ -13,9 +13,36 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
-    <release version="15.6.0" date="upcoming">
+    <release version="15.6.0" description="The Comprehensive Magic Comments Oscillation" date="2025-10-15">
+      <action type="add" issue="ltex-plus/ltex-ls-plus#102" due-to="@Nils1729">
+        Add support comprehensive magic comments
+      </action>
+      <action type="add" issue="ltex-plus/ltex-ls-plus#100" due-to="Dominik Peters (@DominikPeters)">
+        Add support for various LaTeX commands
+      </action>
+      <action type="update">
+        Update LanguageTool 6.7 (see [LT release notes](https://github.com/languagetool-org/languagetool/blob/v6.7/languagetool-standalone/CHANGES.md))
+      </action>
       <action type="update">
         Update to LTeX+ LS 18.6.0. See [ltex-ls-plus release notes](https://github.com/ltex-plus/ltex-ls-plus/releases/tag/18.6.0).
+      </action>
+      <action type="update">
+        Update bundled Java runtime from 21.0.5+11 to 21.0.8+9
+      </action>
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#145">
+        Fix spelling errors for Dutch dummies
+      </action>
+      <action type="fix" issue="ltex-plus/ltex-ls-plus#103" due-to="Simmo Saan (@sim642)">
+        Remove incorrect babel language mapping for estonian
+      </action>
+      <action type="fix" issue="ltex-plus/ltex-ls-plus#105" due-to="Jonathan Chan (@ionathanch)">
+        `ltex.hiddenFalsePositives` rules should be JSON, not strings
+      </action>    
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#142">
+        Fix spell checking in square brackets for Typst documents
+      </action>
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#157">
+        Fix Typst parsing. E.g. the statement `#set text(lang: "en")` caused the entire document not to be checked. 
       </action>
     </release>
     <release version="15.5.1" description="The languageToolHttpServerUri Diremption" date="2025-04-09">
@@ -27,7 +54,7 @@
       </action>
     </release>
     <release version="15.5.0" description="The AsciiDoc Sublimation" date="2025-04-04">
-      <action type="add" issue="#128">
+      <action type="add" issue="ltex-plus/vscode-ltex-plus#128">
         Add support for AsciiDoc
       </action>
       <action type="add" issue="ltex-plus/ltex-ls-plus#69">
@@ -51,18 +78,18 @@
       <action type="fix" issue="ltex-plus/ltex-ls-plus#74">
         Ignore code blocks and raw text in Typst
       </action>
-      <action type="fix" issue="#138">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#138">
         "Open LTeX+ settings" button on Walkthrough takes to old settings page
       </action>
     </release>
     <release version="15.4.0" description="The ltex.enabled Decoupling" date="2024-12-25">
-      <action type="fix" issue="#106">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#106">
         Fix LTeX commands when ltex.enabled is set to false
       </action>
-      <action type="fix" issue="#73">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#73">
         Fix status bar item symbols after using LTeX: Close LTeX+ command
       </action>
-      <action type="fix" issue="#60">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#60">
         Fix timeout issue for low-end computers
       </action>
       <action type="update">
@@ -77,7 +104,7 @@
       <action type="fix" issue="valentjn/ltex-ls#238,valentjn/ltex-ls#224" due-to="Andrii Savytskyi">
         Improved comment parsing and Rust support
       </action>
-      <action type="fix" issue="#105">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#105">
         Fix spelling errors for Spanish dummies
       </action>
     </release>
@@ -85,19 +112,19 @@
       <action type="add" issue="ltex-ls-plus#39,#49">
         Add support for Typst
       </action>
-      <action type="add" issue="#63">
+      <action type="add" issue="ltex-plus/vscode-ltex-plus#63">
         Add support for Quarto.
       </action>
-      <action type="add" issue="#88">
+      <action type="add" issue="ltex-plus/vscode-ltex-plus#88">
         Add support for MDX
       </action>
-      <action type="add" issue="#73">
+      <action type="add" issue="ltex-plus/vscode-ltex-plus#73">
         Add LTeX: Close LTeX+ command to close the extension and LTeX+ LS
       </action>
-      <action type="add" issue="#83">
+      <action type="add" issue="ltex-plus/vscode-ltex-plus#83">
         Publish LTeX+ on Open VSX: https://open-vsx.org/extension/ltex-plus/vscode-ltex-plus
       </action>
-      <action type="fix" issue="#94">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#94">
         Fix error message when using the command `LTeX: Reset and Restart`
       </action>
       <action type="update">
@@ -106,7 +133,7 @@
       <action type="update">
         Update to LTeX+ LS 18.3.0
       </action>
-      <action type="fix" issue="#89">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#89">
         Fix spelling errors for Swedish dummies
       </action>
     </release>
@@ -133,7 +160,7 @@
       </action>
     </release>
     <release version="15.0.1" description="The Rollback Dissolution" date="2024-09-29">
-      <action type="fix" issue="#55">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#55">
         Serious issues with LTeX+ LS 18.1.0. Going back to LTeX+ LS 17.0.1 temporarily.
       </action>
     </release>
@@ -157,7 +184,7 @@
       <action type="fix">
         Incorrectly, compatibility with VS Code lower than 1.82 was claimed in version 14.0.0, but this was not the case. Starting from LTeX+ 14.0.0, VS Code 1.82 or higher is required.
       </action>
-      <action type="fix" issue="#22">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#22">
         Update link to create new issues on Github.
       </action>
     </release>
