@@ -13,6 +13,17 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
+    <release version="15.6.1" description="The False Positive Manipulation" date="2025-10-19">
+      <action type="update">
+        Update to LTeX+ LS 18.6.1
+      </action>
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#165">
+        Fix Hidden False Positives in vscode-ltex-plus
+      </action>
+      <action type="fix" issue="ltex-plus/ltex-ls-plus#119" due-to="@Nils1729">
+        Fix magic comments: Allow multiple settings per comment
+      </action>
+    </release>
     <release version="15.6.0" description="The Comprehensive Magic Comments Oscillation" date="2025-10-15">
       <action type="add" issue="ltex-plus/ltex-ls-plus#102" due-to="@Nils1729">
         Add support comprehensive magic comments
