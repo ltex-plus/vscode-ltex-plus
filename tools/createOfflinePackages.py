@@ -105,7 +105,7 @@ def main() -> None:
     ltexArch = {
           "AMD64" : "x64",
           "x86_64" : "x64",
-          "arm64" : "aarch64",
+          "ARM64" : "aarch64",
           "aarch64" : "aarch64",
         }[platform.machine()]
     ltexPlatformArchs = [(ltexPlatform, ltexArch)]
