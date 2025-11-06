@@ -32,7 +32,7 @@ jobs:
           - "ubuntu-24.04-arm"
           - "macos-latest"
           - "windows-latest"
-          - "windows-arm"
+          - "windows-11-arm"
 
     steps:
       - name: "Checkout Repository"
