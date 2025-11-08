@@ -59,11 +59,11 @@ If you like LT<sub>E</sub>X+, but are not able to contribute in any of these way
 
 [As explained in the FAQ](https://ltex-plus.github.io/ltex-plus/faq.html#whats-the-difference-between-vscode-ltex-ltex-ls-and-languagetool), LT<sub>E</sub>X+ consists of two components: [vscode-ltex-plus](https://github.com/ltex-plus/vscode-ltex-plus) and [ltex-ls-plus](https://github.com/ltex-plus/ltex-ls-plus). This guide is only about the vscode-ltex-plus part. If you want to change ltex-ls-plus as well, [be sure to read and follow the contribution guidelines of ltex-ls-plus](https://ltex-plus.github.io/ltex-plus/ltex-ls/contributing.html).
 
-1. Install VS Code, Git, and npm.
-2. Fork vscode-ltex on GitHub.
-3. Clone the fork: `git clone https://github.com/<YOUR_USERNAME>/vscode-ltex.git`
+1. Install VS Code, Node.js, Python, and Git.
+2. Fork vscode-ltex-plus on GitHub.
+3. Clone the fork: `git clone https://github.com/<YOUR_USERNAME>/vscode-ltex-plus.git`
 4. Open the cloned folder in VS Code.
-5. Install the npm dependencies: `cd vscode-ltex && npm install`
+5. Install the npm dependencies: `cd vscode-ltex-plus && npm install`
 6. Run the `Launch extension` task to launch and debug the extension.
 
 ## How to Contribute Code
