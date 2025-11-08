@@ -2649,7 +2649,6 @@
     "@vscode/test-electron": "2.5.2",
     "@types/mocha": "10.0.10",
     "@types/node": "24.9.2",
-    "@types/rimraf": "4.0.5",
     "@types/semver": "7.7.1",
     "@types/tar": "6.1.13",
     "@types/vscode": "1.82.0",
