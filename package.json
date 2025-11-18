@@ -2663,7 +2663,7 @@
     "typescript": "5.9.3",
     "webpack": "5.102.1",
     "webpack-cli": "6.0.1",
-    "glob": "11.0.3"
+    "glob": "11.1.0"
   },
   "dependencies": {
     "extract-zip": "2.0.1",
