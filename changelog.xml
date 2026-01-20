@@ -13,6 +13,17 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
+    <release version="15.7.0" date="upcoming">
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#170">
+        Fix spelling errors for Polish dummies
+      </action>
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#169,ltex-plus/vscode-ltex-plus#171,ltex-plus/ltex-ls-plus#122,ltex-plus/ltex-ls-plus#129">
+        Fix several parsing issues in Typst documents
+      </action>
+      <action type="add" issue="ltex-plus/ltex-ls-plus#128">
+        Spell check content blocks in Typst
+      </action>
+    </release>
     <release version="15.6.1" description="The False Positive Manipulation" date="2025-10-19">
       <action type="update">
         Update to LTeX+ LS 18.6.1
