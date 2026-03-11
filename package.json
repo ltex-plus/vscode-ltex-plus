@@ -2668,7 +2668,7 @@
   "dependencies": {
     "extract-zip": "2.0.1",
     "semver": "7.7.4",
-    "tar": "7.5.10",
+    "tar": "7.5.11",
     "vscode-languageclient": "9.0.1",
     "vscode-languageserver-protocol": "3.17.5"
   }
