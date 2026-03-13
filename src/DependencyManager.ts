@@ -75,7 +75,10 @@ export default class DependencyManager {
   private static normalizePath(path: string | null | undefined): string | null {
     if (path == null) return null;
     const homeDirPath: string = Os.homedir();
-    return path.replace(/^~($|\/|\\)/, `${homeDirPath}$1`);
+    return path
+      .replace(/\$(.+?)($|\/|\\)/, (_match: string, name: string, seperator: string) => 
+        (process.env[name] ?? '') + seperator)
+      .replace(/^~($|\/|\\)/, `${homeDirPath}$1`);
   }
 
   private static parseUrl(urlStr: string): Https.RequestOptions {
