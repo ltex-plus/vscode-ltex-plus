@@ -20,6 +20,9 @@
       <action type="fix" issue="ltex-plus/vscode-ltex-plus#169,ltex-plus/vscode-ltex-plus#171,ltex-plus/ltex-ls-plus#122,ltex-plus/ltex-ls-plus#129">
         Fix several parsing issues in Typst documents
       </action>
+      <action type="fix" issue="ltex-plus/vscode-ltex-plus#190" due-to="Anton (@theblueplum)">
+        Interpolate environment variables in path options
+      </action>
       <action type="add" issue="ltex-plus/ltex-ls-plus#128">
         Spell check content blocks in Typst
       </action>
