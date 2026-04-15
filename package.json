@@ -2655,7 +2655,7 @@
     "@types/webpack": "5.28.5",
     "@typescript-eslint/eslint-plugin": "8.58.2",
     "@typescript-eslint/parser": "8.58.2",
-    "eslint": "9.39.4",
+    "eslint": "10.2.0",
     "eslint-plugin-only-warn": "1.2.1",
     "mocha": "11.7.5",
     "rimraf": "6.1.3",
