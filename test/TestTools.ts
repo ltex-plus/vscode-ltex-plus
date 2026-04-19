@@ -6,15 +6,20 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import * as Code from 'vscode';
+import * as Code from "vscode";
 
 export default class TestTools {
-  public static async createNewFile(codeLanguage: string, contents?: string):
-      Promise<Code.TextDocument> {
-    return await Code.workspace.openTextDocument({language: codeLanguage, content: contents});
-  }
+	public static async createNewFile(
+		codeLanguage: string,
+		contents?: string,
+	): Promise<Code.TextDocument> {
+		return await Code.workspace.openTextDocument({
+			language: codeLanguage,
+			content: contents,
+		});
+	}
 
-  public static async sleep(ms: number): Promise<void> {
-    return new Promise((resolve: () => void) => setTimeout(resolve, ms));
-  }
+	public static async sleep(ms: number): Promise<void> {
+		return new Promise((resolve: () => void) => setTimeout(resolve, ms));
+	}
 }

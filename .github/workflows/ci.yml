@@ -61,7 +61,7 @@ jobs:
       - name: "Build Package with vsce"
         run: "vsce package"
 
-      - name: "Run ESLint"
+      - name: "Run Biome"
         run: "npm run lint"
 
       - name: "Run Mocha Tests (Linux)"

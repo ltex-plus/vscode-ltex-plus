@@ -6,167 +6,236 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import * as Code from 'vscode';
-import * as Fs from 'fs';
-import * as Os from 'os';
-import * as Path from 'path';
-import * as Url from 'url';
+import * as Fs from "node:fs";
+import * as Os from "node:os";
+import * as Path from "node:path";
+import * as Url from "node:url";
+import * as Code from "vscode";
 
-import DependencyManager from './DependencyManager';
-import {i18n} from './I18n';
-import Logger from './Logger';
-import StatusPrinter from './StatusPrinter';
+import type DependencyManager from "./DependencyManager";
+import { i18n } from "./I18n";
+import Logger from "./Logger";
+import type StatusPrinter from "./StatusPrinter";
 
 export default class BugReporter {
-  private _context: Code.ExtensionContext;
-  private _dependencyManager: DependencyManager;
-  private _statusPrinter: StatusPrinter;
+	private _context: Code.ExtensionContext;
+	private _dependencyManager: DependencyManager;
+	private _statusPrinter: StatusPrinter;
 
-  private static readonly _maxNumberOfDocumentLines: number = 200;
-  private static readonly _maxNumberOfConfigLines: number = 1000;
-  private static readonly _maxNumberOfServerLogLines: number = 100;
-  private static readonly _maxNumberOfClientLogLines: number = 1000;
-  private static readonly _bugReportUrl: string = 'https://github.com/ltex-plus/vscode-ltex-plus/'
-      + 'issues/new?assignees=&labels=1-bug%20%F0%9F%90%9B%2C+2-unconfirmed&'
-      + 'template=bug-report.md&title=&body=';
+	private static readonly _maxNumberOfDocumentLines: number = 200;
+	private static readonly _maxNumberOfConfigLines: number = 1000;
+	private static readonly _maxNumberOfServerLogLines: number = 100;
+	private static readonly _maxNumberOfClientLogLines: number = 1000;
+	private static readonly _bugReportUrl: string =
+		"https://github.com/ltex-plus/vscode-ltex-plus/" +
+		"issues/new?assignees=&labels=1-bug%20%F0%9F%90%9B%2C+2-unconfirmed&" +
+		"template=bug-report.md&title=&body=";
 
-  public constructor(context: Code.ExtensionContext, dependencyManager: DependencyManager,
-        statusInformationPrinter: StatusPrinter) {
-    this._context = context;
-    this._dependencyManager = dependencyManager;
-    this._statusPrinter = statusInformationPrinter;
-  }
+	public constructor(
+		context: Code.ExtensionContext,
+		dependencyManager: DependencyManager,
+		statusInformationPrinter: StatusPrinter,
+	) {
+		this._context = context;
+		this._dependencyManager = dependencyManager;
+		this._statusPrinter = statusInformationPrinter;
+	}
 
-  private async createReport(): Promise<string> {
-    this._statusPrinter.print();
+	private async createReport(): Promise<string> {
+		this._statusPrinter.print();
 
-    const templatePath: string = Path.resolve(
-        this._context.extensionPath, '.github', 'ISSUE_TEMPLATE', 'bug-report.md');
-    let bugReport: string = Fs.readFileSync(templatePath, {encoding: 'utf-8'});
-    let pos: number;
+		const templatePath: string = Path.resolve(
+			this._context.extensionPath,
+			".github",
+			"ISSUE_TEMPLATE",
+			"bug-report.md",
+		);
+		let bugReport: string = Fs.readFileSync(templatePath, {
+			encoding: "utf-8",
+		});
+		let pos: number;
 
-    pos = bugReport.indexOf('---');
+		pos = bugReport.indexOf("---");
 
-    if (pos > -1) {
-      pos = bugReport.indexOf('---', pos + 3);
+		if (pos > -1) {
+			pos = bugReport.indexOf("---", pos + 3);
 
-      if (pos > -1) {
-        pos = bugReport.indexOf('**', pos + 3);
-        if (pos > -1) bugReport = bugReport.substring(pos);
-      }
-    }
+			if (pos > -1) {
+				pos = bugReport.indexOf("**", pos + 3);
+				if (pos > -1) bugReport = bugReport.substring(pos);
+			}
+		}
 
-    const document: Code.TextDocument | undefined =
-        Code.window.activeTextEditor?.document;
+		const document: Code.TextDocument | undefined =
+			Code.window.activeTextEditor?.document;
 
-    if (document != null) {
-      let codeLanguage: string;
+		if (document != null) {
+			let codeLanguage: string;
 
-      switch (document.languageId) {
-        case 'bibtex':
-        case 'latex':
-        case 'markdown': {
-          codeLanguage = document.languageId;
-          break;
-        }
-        default: {
-          codeLanguage = 'plaintext';
-          break;
-        }
-      }
+			switch (document.languageId) {
+				case "bibtex":
+				case "latex":
+				case "markdown": {
+					codeLanguage = document.languageId;
+					break;
+				}
+				default: {
+					codeLanguage = "plaintext";
+					break;
+				}
+			}
 
-      pos = bugReport.indexOf('REPLACE_THIS_WITH_SAMPLE_DOCUMENT');
+			pos = bugReport.indexOf("REPLACE_THIS_WITH_SAMPLE_DOCUMENT");
 
-      if (pos > -1) {
-        pos = bugReport.lastIndexOf('```', pos);
+			if (pos > -1) {
+				pos = bugReport.lastIndexOf("```", pos);
 
-        if (pos > -1) {
-          bugReport = bugReport.substring(0, pos + 3) + codeLanguage + bugReport.substring(pos + 3);
-        }
-      }
+				if (pos > -1) {
+					bugReport =
+						bugReport.substring(0, pos + 3) +
+						codeLanguage +
+						bugReport.substring(pos + 3);
+				}
+			}
 
-      const documentText: string = BugReporter.truncateStringAtEnd(
-          document.getText(), BugReporter._maxNumberOfDocumentLines);
-      bugReport = bugReport.replace('REPLACE_THIS_WITH_SAMPLE_DOCUMENT', documentText);
-    }
+			const documentText: string = BugReporter.truncateStringAtEnd(
+				document.getText(),
+				BugReporter._maxNumberOfDocumentLines,
+			);
+			bugReport = bugReport.replace(
+				"REPLACE_THIS_WITH_SAMPLE_DOCUMENT",
+				documentText,
+			);
+		}
 
-    const config: any = JSON.parse(JSON.stringify(Code.workspace.getConfiguration('ltex')));
-    let configJson: string = JSON.stringify(config, null, 2);
-    configJson = BugReporter.truncateStringAtEnd(configJson, BugReporter._maxNumberOfConfigLines);
-    bugReport = bugReport.replace('REPLACE_THIS_WITH_LTEX_CONFIGURATION', configJson);
+		const config: any = JSON.parse(
+			JSON.stringify(Code.workspace.getConfiguration("ltex")),
+		);
+		let configJson: string = JSON.stringify(config, null, 2);
+		configJson = BugReporter.truncateStringAtEnd(
+			configJson,
+			BugReporter._maxNumberOfConfigLines,
+		);
+		bugReport = bugReport.replace(
+			"REPLACE_THIS_WITH_LTEX_CONFIGURATION",
+			configJson,
+		);
 
-    const serverLog: string = BugReporter.truncateStringAtStart(
-        Logger.serverOutputChannel.content, BugReporter._maxNumberOfServerLogLines);
-    bugReport = bugReport.replace('REPLACE_THIS_WITH_LTEX_LANGUAGE_SERVER_LOG', serverLog);
+		const serverLog: string = BugReporter.truncateStringAtStart(
+			Logger.serverOutputChannel.content,
+			BugReporter._maxNumberOfServerLogLines,
+		);
+		bugReport = bugReport.replace(
+			"REPLACE_THIS_WITH_LTEX_LANGUAGE_SERVER_LOG",
+			serverLog,
+		);
 
-    let clientLog: string = Logger.clientOutputChannel.content;
-    clientLog = BugReporter.truncateStringAtStart(
-        clientLog, BugReporter._maxNumberOfClientLogLines);
-    bugReport = bugReport.replace('REPLACE_THIS_WITH_LTEX_LANGUAGE_CLIENT_LOG', clientLog);
+		let clientLog: string = Logger.clientOutputChannel.content;
+		clientLog = BugReporter.truncateStringAtStart(
+			clientLog,
+			BugReporter._maxNumberOfClientLogLines,
+		);
+		bugReport = bugReport.replace(
+			"REPLACE_THIS_WITH_LTEX_LANGUAGE_CLIENT_LOG",
+			clientLog,
+		);
 
-    const platform: string = `${Os.type} (${Os.platform}), ${Os.arch}, ${Os.release}`;
-    bugReport = bugReport.replace(/^- Operating system: .*$/m, `- Operating system: ${platform}`);
+		const platform: string = `${Os.type} (${Os.platform}), ${Os.arch}, ${Os.release}`;
+		bugReport = bugReport.replace(
+			/^- Operating system: .*$/m,
+			`- Operating system: ${platform}`,
+		);
 
-    const vscodeReplacement: string =
-        `- VS Code: ${Code.version}`;
-    bugReport = bugReport.replace(/^- VS Code: .*$/m, vscodeReplacement);
+		const vscodeReplacement: string = `- VS Code: ${Code.version}`;
+		bugReport = bugReport.replace(/^- VS Code: .*$/m, vscodeReplacement);
 
-    // deprecated: replace with self._context.extension starting with VS Code 1.55.0
-    const extension: Code.Extension<any> | undefined =
-        Code.extensions.getExtension('ltex-plus.vscode-ltex-plus');
+		// deprecated: replace with self._context.extension starting with VS Code 1.55.0
+		const extension: Code.Extension<any> | undefined =
+			Code.extensions.getExtension("ltex-plus.vscode-ltex-plus");
 
-    if (extension != null) {
-      bugReport = bugReport.replace(/^- vscode-ltex: .*$/m,
-          `- vscode-ltex-plus: ${extension.packageJSON.version}`);
-    }
+		if (extension != null) {
+			bugReport = bugReport.replace(
+				/^- vscode-ltex: .*$/m,
+				`- vscode-ltex-plus: ${extension.packageJSON.version}`,
+			);
+		}
 
-    if (this._dependencyManager != null) {
-      const ltexLsVersion: string | null = this._dependencyManager.ltexLsVersion;
+		if (this._dependencyManager != null) {
+			const ltexLsVersion: string | null =
+				this._dependencyManager.ltexLsVersion;
 
-      if (ltexLsVersion != null) {
-        bugReport = bugReport.replace(/^- ltex-ls-plus: .*$/m, `- ltex-ls-plus: ${ltexLsVersion}`);
-      }
+			if (ltexLsVersion != null) {
+				bugReport = bugReport.replace(
+					/^- ltex-ls-plus: .*$/m,
+					`- ltex-ls-plus: ${ltexLsVersion}`,
+				);
+			}
 
-      const javaVersion: string | null = this._dependencyManager.javaVersion;
+			const javaVersion: string | null = this._dependencyManager.javaVersion;
 
-      if (javaVersion != null) {
-        bugReport = bugReport.replace(/^- Java: .*$/m, `- Java: ${javaVersion}`);
-      }
-    }
+			if (javaVersion != null) {
+				bugReport = bugReport.replace(
+					/^- Java: .*$/m,
+					`- Java: ${javaVersion}`,
+				);
+			}
+		}
 
-    return Promise.resolve(bugReport);
-  }
+		return Promise.resolve(bugReport);
+	}
 
-  private static truncateStringAtStart(str: string, maxNumberOfLines: number): string {
-    const lines: string[] = str.split('\n');
-    return ((lines.length > maxNumberOfLines)
-        ? ('[... truncated]\n' + lines.slice(-maxNumberOfLines).join('\n')) : str);
-  }
+	private static truncateStringAtStart(
+		str: string,
+		maxNumberOfLines: number,
+	): string {
+		const lines: string[] = str.split("\n");
+		return lines.length > maxNumberOfLines
+			? `[... truncated]\n${lines.slice(-maxNumberOfLines).join("\n")}`
+			: str;
+	}
 
-  private static truncateStringAtEnd(str: string, maxNumberOfLines: number): string {
-    const lines: string[] = str.split('\n');
-    return ((lines.length > maxNumberOfLines)
-        ? (lines.slice(0, maxNumberOfLines).join('\n') + '\n[... truncated]') : str);
-  }
+	private static truncateStringAtEnd(
+		str: string,
+		maxNumberOfLines: number,
+	): string {
+		const lines: string[] = str.split("\n");
+		return lines.length > maxNumberOfLines
+			? `${lines.slice(0, maxNumberOfLines).join("\n")}\n[... truncated]`
+			: str;
+	}
 
-  public async report(): Promise<void> {
-    Logger.log(i18n('creatingBugReport'));
-    const bugReport: string = await this.createReport();
+	public async report(): Promise<void> {
+		Logger.log(i18n("creatingBugReport"));
+		const bugReport: string = await this.createReport();
 
-    Code.window.showInformationMessage(i18n('thanksForReportingBug'),
-          i18n('setLtexTraceServerToVerbose'), i18n('copyReportAndCreateIssue')).then(
-            async (selectedItem: string | undefined) => {
-      if (selectedItem == i18n('setLtexTraceServerToVerbose')) {
-        const config: Code.WorkspaceConfiguration = Code.workspace.getConfiguration('ltex');
-        config.update('trace.server', 'verbose', Code.ConfigurationTarget.Global);
-        Code.window.showInformationMessage(i18n('ltexTraceServerSetToVerbose'));
-      } else if (selectedItem == i18n('copyReportAndCreateIssue')) {
-        const url: Url.URL = new Url.URL(BugReporter._bugReportUrl);
-        url.searchParams.set('body', i18n('enterSummaryOfIssueInTitleFieldAndReplaceSentence'));
+		Code.window
+			.showInformationMessage(
+				i18n("thanksForReportingBug"),
+				i18n("setLtexTraceServerToVerbose"),
+				i18n("copyReportAndCreateIssue"),
+			)
+			.then(async (selectedItem: string | undefined) => {
+				if (selectedItem === i18n("setLtexTraceServerToVerbose")) {
+					const config: Code.WorkspaceConfiguration =
+						Code.workspace.getConfiguration("ltex");
+					config.update(
+						"trace.server",
+						"verbose",
+						Code.ConfigurationTarget.Global,
+					);
+					Code.window.showInformationMessage(
+						i18n("ltexTraceServerSetToVerbose"),
+					);
+				} else if (selectedItem === i18n("copyReportAndCreateIssue")) {
+					const url: Url.URL = new Url.URL(BugReporter._bugReportUrl);
+					url.searchParams.set(
+						"body",
+						i18n("enterSummaryOfIssueInTitleFieldAndReplaceSentence"),
+					);
 
-        Code.env.clipboard.writeText(bugReport);
-        Code.env.openExternal(Code.Uri.parse(url.toString()));
-      }
-    });
-  }
+					Code.env.clipboard.writeText(bugReport);
+					Code.env.openExternal(Code.Uri.parse(url.toString()));
+				}
+			});
+	}
 }

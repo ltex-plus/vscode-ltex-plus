@@ -5,10 +5,7 @@
 			"label": "Watch extension",
 			"type": "shell",
 			"command": "npm",
-			"args": [
-				"run",
-				"webpack-dev"
-			],
+			"args": ["run", "webpack-dev"],
 			"presentation": {
 				"reveal": "silent"
 			},
@@ -19,10 +16,7 @@
 			"label": "Build extension",
 			"type": "shell",
 			"command": "npm",
-			"args": [
-				"run",
-				"webpack"
-			],
+			"args": ["run", "webpack"],
 			"presentation": {
 				"reveal": "silent"
 			},

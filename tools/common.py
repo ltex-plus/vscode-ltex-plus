@@ -28,12 +28,12 @@ def getToBeDownloadedVersions() -> Tuple[str, str]:
   with open(repoDirPath.joinpath("src", "DependencyManager.ts"), "r") as f:
     dependencyManagerTypescript = f.read()
 
-  matches = re.findall(r"_toBeDownloadedLtexLsTag: string =\n *'(.*?)';",
+  matches = re.findall(r"_toBeDownloadedLtexLsTag: string = *\"(.*?)\";",
       dependencyManagerTypescript)
   assert len(matches) == 1
   toBeDownloadedLtexLsTag = matches[0]
 
-  matches = re.findall(r"_toBeDownloadedLtexLsVersion: string =\n *'(.*?)';",
+  matches = re.findall(r"_toBeDownloadedLtexLsVersion: string = *\"(.*?)\";",
       dependencyManagerTypescript)
   assert len(matches) == 1
   toBeDownloadedLtexLsVersion = matches[0]

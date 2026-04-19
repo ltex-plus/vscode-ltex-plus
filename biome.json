@@ -1,0 +1,19 @@
+{
+	"linter": {
+		"rules": {
+			"suspicious": {
+				"useIterableCallbackReturn": "off",
+				"noExplicitAny": "off"
+			},
+			"complexity": {
+				"noStaticOnlyClass": "off"
+			},
+			"style": {
+				"noNonNullAssertion": "off"
+			}
+		}
+	},
+	"files": {
+		"includes": ["**", "!!**/out", "!!**/dist"]
+	}
+}
