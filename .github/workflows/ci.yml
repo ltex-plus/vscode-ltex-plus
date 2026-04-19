@@ -61,7 +61,8 @@ jobs:
       - name: "Build Package with vsce"
         run: "vsce package"
 
-      - name: "Run Biome"
+      - name: "Run Biome (Linux)"
+        if: "${{ startsWith(matrix.os, 'ubuntu-') }}"
         run: "npm run lint"
 
       - name: "Run Mocha Tests (Linux)"

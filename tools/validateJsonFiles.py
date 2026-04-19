@@ -211,7 +211,7 @@ def getUsedNlsKeysFromTypeScript() -> List[str]:
     for fileName in fileNames:
       filePath = rootPath.joinpath(fileName)
       with open(filePath, "r") as f: typeScript = f.read()
-      usedNlsKeys.extend(re.findall("i18n\('(.*?)'", typeScript))
+      usedNlsKeys.extend(re.findall("i18n\(\n?\\s*\"(.*?)\"", typeScript))
 
   return sorted(list(set(usedNlsKeys)))
 
