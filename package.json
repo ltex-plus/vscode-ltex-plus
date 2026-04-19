@@ -2651,7 +2651,6 @@
 		"@types/mocha": "10.0.10",
 		"@types/node": "25.6.0",
 		"@types/semver": "7.7.1",
-		"@types/tar": "7.0.87",
 		"@types/vscode": "1.82.0",
 		"@types/webpack": "5.28.5",
 		"@vscode/test-electron": "2.5.2",
