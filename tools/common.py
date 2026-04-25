@@ -44,15 +44,7 @@ toBeDownloadedLtexLsTag, toBeDownloadedLtexLsVersion = getToBeDownloadedVersions
 
 
 
-def getGitHubOrganizationRepository() -> Tuple[str, str]:
-  output = subprocess.run(["git", "remote", "get-url", "origin"],
-      cwd=pathlib.Path(__file__).parent.parent, stdout=subprocess.PIPE).stdout.decode()
-  regexMatch = re.search(r"github.com[:/](.*?)/(.*?)(?:\.git)?$", output)
-  assert regexMatch is not None, output
-  organization, repository = regexMatch.group(1), regexMatch.group(2)
-  return organization, repository
-
-organization, repository = getGitHubOrganizationRepository()
+organization, repository = "ltex-plus", "vscode-ltex-plus"
 
 
 
