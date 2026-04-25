@@ -2920,7 +2920,8 @@
           "default": "",
           "markdownDescription": "%ltex.i18n.configuration.ltex.languageToolHttpServerUri.markdownDescription%",
           "examples": [
-            "http://localhost:8081/"
+            "https://api.languagetoolplus.com",
+            "http://localhost:8081"
           ]
         },
         "ltex.languageToolOrg.username": {

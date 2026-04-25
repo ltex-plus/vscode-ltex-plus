@@ -709,5 +709,6 @@
   "ltex.i18n.commands.ltex.reportBug.title": "Bug in LTeX+ melden",
   "ltex.i18n.commands.ltex.reportBug.fullMarkdownDescription": "Zeigt eine Meldung an, die einen Link zu Anweisungen über wie man Bugs in LTeX+ meldet und einen Knopf zum Kopieren eines Bug-Berichts enthält.\n\nWenn der Knopf gedrückt wird, dann kopiert LTeX+ einen vorausgefüllten Bug-Bericht in die Zwischenablage, die anschließend in das GitHub-Problem eingefügt werden kann.",
   "ltex.i18n.commands.ltex.requestFeature.title": "Feature in LTeX+ wünschen",
-  "ltex.i18n.commands.ltex.requestFeature.fullMarkdownDescription": "Erstellt einen neuen Feature-Wunsch für LTeX+, indem die GitHub-Webseite geöffnet wird."
+  "ltex.i18n.commands.ltex.requestFeature.fullMarkdownDescription": "Erstellt einen neuen Feature-Wunsch für LTeX+, indem die GitHub-Webseite geöffnet wird.",
+  "ltex.i18n.configuration.ltex.languageToolHttpServerUri.fullMarkdownExamples": "`\"https://api.languagetoolplus.com\"` (gehostete API), `\"http://localhost:8081\"` (selbst gehostet)"
 }
