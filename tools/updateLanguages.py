@@ -71,8 +71,8 @@ def fetchLanguages(toolsDirPath: pathlib.Path, ltexLsPath: pathlib.Path
   assert not jarOnly, (
       "Local-jar codes missing from hosted LT API: {}. The script assumes "
       "every locally accepted code is also accepted by the hosted server, so "
-      "that hosted-API entries can be marked simply as 'remote-only'. If this "
-      "assertion fires, the docs need a way to advertise 'local-only' codes "
+      "that hosted-API entries can be marked simply as 'only on api.languagetoolplus.com'. "
+      "If this assertion fires, the docs need a way to advertise 'local-only' codes "
       "too -- see updateLanguages.py and updatePagesFromSource.py.".format(
           sorted(jarOnly)))
 
