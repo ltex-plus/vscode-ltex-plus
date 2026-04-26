@@ -16,3 +16,6 @@
 /.vscode/settings.json
 
 !/lib/.keep
+
+nls-report.md
+nls-report-de.md
