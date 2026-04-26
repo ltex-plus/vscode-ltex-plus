@@ -150,6 +150,9 @@ def validatePackageNlsJson() -> None:
 
     for nlsKey in sorted(list(packageNlsJson)):
       if nlsKey.endswith(".fullMarkdownDescription"): continue
+      if nlsKey.endswith(".fullMarkdownExamples"): continue
+      if nlsKey.endswith(".aliasOf"): continue
+      if nlsKey.endswith(".serverOnly"): continue
       assert nlsKey in usedNlsKeys, f"NLS key '{nlsKey}' is defined, but unused"
 
     for nlsKey in usedNlsKeys:

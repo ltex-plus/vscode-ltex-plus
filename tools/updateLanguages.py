@@ -131,7 +131,7 @@ def updatePackageJson(ltLanguageShortCodes: Sequence[str]) -> None:
         }
 
   with open(packageJsonPath, "w") as f:
-    json.dump(packageJson, f, indent=2, ensure_ascii=False)
+    json.dump(packageJson, f, indent='	', ensure_ascii=False)
     f.write("\n")
 
 
@@ -280,7 +280,7 @@ def updatePackageNlsJson(ltLanguageShortCodes: Sequence[str], ltLanguageNames: S
       newPackageNlsJson[key] = value
 
   with open(packageNlsJsonPath, "w") as f:
-    json.dump(newPackageNlsJson, f, indent=2, ensure_ascii=False)
+    json.dump(newPackageNlsJson, f, indent='	', ensure_ascii=False)
     f.write("\n")
 
 
