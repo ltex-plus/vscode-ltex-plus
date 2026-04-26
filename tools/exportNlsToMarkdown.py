@@ -34,7 +34,7 @@ LEAF_KINDS = set(KIND_LABELS.keys()) | {
     "markdownEnumDescription",
     "enumDescription",
     "aliasOf",
-    "serverOnly",
+    "remoteOnly",
 }
 
 
@@ -99,7 +99,7 @@ def render_setting_entry(parent: str, fields: Dict[str, str]) -> List[str]:
             "markdownEnumDescription",
             "enumDescription",
             "aliasOf",
-            "serverOnly",
+            "remoteOnly",
         }:
             continue  # handled at the parent level for enum-typed settings
         label = KIND_LABELS.get(kind, kind)
@@ -140,7 +140,7 @@ def collect_enum_table(
         "enumDescription",
         "markdownDescription",
         "aliasOf",
-        "serverOnly",
+        "remoteOnly",
     ]:
         if k in kind_set:
             columns.append(k)
