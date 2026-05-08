@@ -187,13 +187,17 @@
 						"be-BY",
 						"br-FR",
 						"ca-ES",
+						"ca-ES-balear",
 						"ca-ES-valencia",
+						"crh-UA",
 						"da-DK",
 						"de",
 						"de-AT",
 						"de-CH",
 						"de-DE",
 						"de-DE-x-simple-language",
+						"de-DE-x-simple-language-DE",
+						"de-LU",
 						"el-GR",
 						"en",
 						"en-AU",
@@ -205,15 +209,25 @@
 						"eo",
 						"es",
 						"es-AR",
+						"es-ES",
 						"fa",
+						"fa-IR",
 						"fr",
+						"fr-BE",
+						"fr-CA",
+						"fr-CH",
+						"fr-FR",
 						"ga-IE",
 						"gl-ES",
 						"it",
+						"it-IT",
 						"ja-JP",
 						"km-KH",
+						"nb",
 						"nl",
 						"nl-BE",
+						"nl-NL",
+						"no",
 						"pl-PL",
 						"pt",
 						"pt-AO",
@@ -225,6 +239,7 @@
 						"sk-SK",
 						"sl-SI",
 						"sv",
+						"sv-SE",
 						"ta-IN",
 						"tl-PH",
 						"uk-UA",
@@ -237,13 +252,17 @@
 						"%ltex.i18n.configuration.ltex.language.be-BY.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.br-FR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ca-ES.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.ca-ES-balear.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ca-ES-valencia.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.crh-UA.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.da-DK.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-AT.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-CH.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-DE.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-DE-x-simple-language.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.de-DE-x-simple-language-DE.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.de-LU.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.el-GR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.en.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.en-AU.markdownEnumDescription%",
@@ -255,15 +274,25 @@
 						"%ltex.i18n.configuration.ltex.language.eo.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.es.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.es-AR.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.es-ES.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.fa.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fa-IR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.fr.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-BE.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-CA.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-CH.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-FR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ga-IE.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.gl-ES.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.it.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.it-IT.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ja-JP.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.km-KH.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.nb.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.nl.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.nl-BE.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.nl-NL.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.no.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.pl-PL.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.pt.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.pt-AO.markdownEnumDescription%",
@@ -275,6 +304,7 @@
 						"%ltex.i18n.configuration.ltex.language.sk-SK.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.sl-SI.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.sv.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.language.sv-SE.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ta-IN.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.tl-PH.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.language.uk-UA.markdownEnumDescription%",
@@ -287,13 +317,17 @@
 						"%ltex.i18n.configuration.ltex.language.be-BY.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.br-FR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ca-ES.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.ca-ES-balear.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ca-ES-valencia.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.crh-UA.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.da-DK.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-AT.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-CH.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-DE.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.de-DE-x-simple-language.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.de-DE-x-simple-language-DE.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.de-LU.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.el-GR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.en.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.en-AU.enumDescription%",
@@ -305,15 +339,25 @@
 						"%ltex.i18n.configuration.ltex.language.eo.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.es.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.es-AR.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.es-ES.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.fa.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fa-IR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.fr.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-BE.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-CA.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-CH.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.fr-FR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ga-IE.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.gl-ES.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.it.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.it-IT.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ja-JP.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.km-KH.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.nb.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.nl.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.nl-BE.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.nl-NL.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.no.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.pl-PL.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.pt.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.pt-AO.enumDescription%",
@@ -325,6 +369,7 @@
 						"%ltex.i18n.configuration.ltex.language.sk-SK.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.sl-SI.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.sv.enumDescription%",
+						"%ltex.i18n.configuration.ltex.language.sv-SE.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.ta-IN.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.tl-PH.enumDescription%",
 						"%ltex.i18n.configuration.ltex.language.uk-UA.enumDescription%",
@@ -344,13 +389,17 @@
 							"be-BY",
 							"br-FR",
 							"ca-ES",
+							"ca-ES-balear",
 							"ca-ES-valencia",
+							"crh-UA",
 							"da-DK",
 							"de",
 							"de-AT",
 							"de-CH",
 							"de-DE",
 							"de-DE-x-simple-language",
+							"de-DE-x-simple-language-DE",
+							"de-LU",
 							"el-GR",
 							"en",
 							"en-AU",
@@ -362,15 +411,25 @@
 							"eo",
 							"es",
 							"es-AR",
+							"es-ES",
 							"fa",
+							"fa-IR",
 							"fr",
+							"fr-BE",
+							"fr-CA",
+							"fr-CH",
+							"fr-FR",
 							"ga-IE",
 							"gl-ES",
 							"it",
+							"it-IT",
 							"ja-JP",
 							"km-KH",
+							"nb",
 							"nl",
 							"nl-BE",
+							"nl-NL",
+							"no",
 							"pl-PL",
 							"pt",
 							"pt-AO",
@@ -382,6 +441,7 @@
 							"sk-SK",
 							"sl-SI",
 							"sv",
+							"sv-SE",
 							"ta-IN",
 							"tl-PH",
 							"uk-UA",
@@ -424,12 +484,26 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.ca-ES.markdownDescription%"
 						},
+						"ca-ES-balear": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.ca-ES-balear.markdownDescription%"
+						},
 						"ca-ES-valencia": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.ca-ES-valencia.markdownDescription%"
+						},
+						"crh-UA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.crh-UA.markdownDescription%"
 						},
 						"da-DK": {
 							"type": "array",
@@ -472,6 +546,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.de-DE-x-simple-language.markdownDescription%"
+						},
+						"de-DE-x-simple-language-DE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.de-DE-x-simple-language-DE.markdownDescription%"
+						},
+						"de-LU": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.de-LU.markdownDescription%"
 						},
 						"el-GR": {
 							"type": "array",
@@ -550,6 +638,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.es-AR.markdownDescription%"
 						},
+						"es-ES": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.es-ES.markdownDescription%"
+						},
 						"fa": {
 							"type": "array",
 							"items": {
@@ -557,12 +652,47 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fa.markdownDescription%"
 						},
+						"fa-IR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fa-IR.markdownDescription%"
+						},
 						"fr": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fr.markdownDescription%"
+						},
+						"fr-BE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fr-BE.markdownDescription%"
+						},
+						"fr-CA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fr-CA.markdownDescription%"
+						},
+						"fr-CH": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fr-CH.markdownDescription%"
+						},
+						"fr-FR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.fr-FR.markdownDescription%"
 						},
 						"ga-IE": {
 							"type": "array",
@@ -585,6 +715,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.it.markdownDescription%"
 						},
+						"it-IT": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.it-IT.markdownDescription%"
+						},
 						"ja-JP": {
 							"type": "array",
 							"items": {
@@ -599,6 +736,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.km-KH.markdownDescription%"
 						},
+						"nb": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.nb.markdownDescription%"
+						},
 						"nl": {
 							"type": "array",
 							"items": {
@@ -612,6 +756,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.nl-BE.markdownDescription%"
+						},
+						"nl-NL": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.nl-NL.markdownDescription%"
+						},
+						"no": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.no.markdownDescription%"
 						},
 						"pl-PL": {
 							"type": "array",
@@ -690,6 +848,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.sv.markdownDescription%"
 						},
+						"sv-SE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.dictionary.sv-SE.markdownDescription%"
+						},
 						"ta-IN": {
 							"type": "array",
 							"items": {
@@ -747,13 +912,17 @@
 							"be-BY",
 							"br-FR",
 							"ca-ES",
+							"ca-ES-balear",
 							"ca-ES-valencia",
+							"crh-UA",
 							"da-DK",
 							"de",
 							"de-AT",
 							"de-CH",
 							"de-DE",
 							"de-DE-x-simple-language",
+							"de-DE-x-simple-language-DE",
+							"de-LU",
 							"el-GR",
 							"en",
 							"en-AU",
@@ -765,15 +934,25 @@
 							"eo",
 							"es",
 							"es-AR",
+							"es-ES",
 							"fa",
+							"fa-IR",
 							"fr",
+							"fr-BE",
+							"fr-CA",
+							"fr-CH",
+							"fr-FR",
 							"ga-IE",
 							"gl-ES",
 							"it",
+							"it-IT",
 							"ja-JP",
 							"km-KH",
+							"nb",
 							"nl",
 							"nl-BE",
+							"nl-NL",
+							"no",
 							"pl-PL",
 							"pt",
 							"pt-AO",
@@ -785,6 +964,7 @@
 							"sk-SK",
 							"sl-SI",
 							"sv",
+							"sv-SE",
 							"ta-IN",
 							"tl-PH",
 							"uk-UA",
@@ -827,12 +1007,26 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.ca-ES.markdownDescription%"
 						},
+						"ca-ES-balear": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.ca-ES-balear.markdownDescription%"
+						},
 						"ca-ES-valencia": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.ca-ES-valencia.markdownDescription%"
+						},
+						"crh-UA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.crh-UA.markdownDescription%"
 						},
 						"da-DK": {
 							"type": "array",
@@ -875,6 +1069,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.de-DE-x-simple-language.markdownDescription%"
+						},
+						"de-DE-x-simple-language-DE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.de-DE-x-simple-language-DE.markdownDescription%"
+						},
+						"de-LU": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.de-LU.markdownDescription%"
 						},
 						"el-GR": {
 							"type": "array",
@@ -953,6 +1161,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.es-AR.markdownDescription%"
 						},
+						"es-ES": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.es-ES.markdownDescription%"
+						},
 						"fa": {
 							"type": "array",
 							"items": {
@@ -960,12 +1175,47 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fa.markdownDescription%"
 						},
+						"fa-IR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fa-IR.markdownDescription%"
+						},
 						"fr": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fr.markdownDescription%"
+						},
+						"fr-BE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fr-BE.markdownDescription%"
+						},
+						"fr-CA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fr-CA.markdownDescription%"
+						},
+						"fr-CH": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fr-CH.markdownDescription%"
+						},
+						"fr-FR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.fr-FR.markdownDescription%"
 						},
 						"ga-IE": {
 							"type": "array",
@@ -988,6 +1238,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.it.markdownDescription%"
 						},
+						"it-IT": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.it-IT.markdownDescription%"
+						},
 						"ja-JP": {
 							"type": "array",
 							"items": {
@@ -1002,6 +1259,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.km-KH.markdownDescription%"
 						},
+						"nb": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.nb.markdownDescription%"
+						},
 						"nl": {
 							"type": "array",
 							"items": {
@@ -1015,6 +1279,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.nl-BE.markdownDescription%"
+						},
+						"nl-NL": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.nl-NL.markdownDescription%"
+						},
+						"no": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.no.markdownDescription%"
 						},
 						"pl-PL": {
 							"type": "array",
@@ -1093,6 +1371,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.sv.markdownDescription%"
 						},
+						"sv-SE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.disabledRules.sv-SE.markdownDescription%"
+						},
 						"ta-IN": {
 							"type": "array",
 							"items": {
@@ -1146,13 +1431,17 @@
 							"be-BY",
 							"br-FR",
 							"ca-ES",
+							"ca-ES-balear",
 							"ca-ES-valencia",
+							"crh-UA",
 							"da-DK",
 							"de",
 							"de-AT",
 							"de-CH",
 							"de-DE",
 							"de-DE-x-simple-language",
+							"de-DE-x-simple-language-DE",
+							"de-LU",
 							"el-GR",
 							"en",
 							"en-AU",
@@ -1164,15 +1453,25 @@
 							"eo",
 							"es",
 							"es-AR",
+							"es-ES",
 							"fa",
+							"fa-IR",
 							"fr",
+							"fr-BE",
+							"fr-CA",
+							"fr-CH",
+							"fr-FR",
 							"ga-IE",
 							"gl-ES",
 							"it",
+							"it-IT",
 							"ja-JP",
 							"km-KH",
+							"nb",
 							"nl",
 							"nl-BE",
+							"nl-NL",
+							"no",
 							"pl-PL",
 							"pt",
 							"pt-AO",
@@ -1184,6 +1483,7 @@
 							"sk-SK",
 							"sl-SI",
 							"sv",
+							"sv-SE",
 							"ta-IN",
 							"tl-PH",
 							"uk-UA",
@@ -1226,12 +1526,26 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.ca-ES.markdownDescription%"
 						},
+						"ca-ES-balear": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.ca-ES-balear.markdownDescription%"
+						},
 						"ca-ES-valencia": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.ca-ES-valencia.markdownDescription%"
+						},
+						"crh-UA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.crh-UA.markdownDescription%"
 						},
 						"da-DK": {
 							"type": "array",
@@ -1274,6 +1588,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.de-DE-x-simple-language.markdownDescription%"
+						},
+						"de-DE-x-simple-language-DE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.de-DE-x-simple-language-DE.markdownDescription%"
+						},
+						"de-LU": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.de-LU.markdownDescription%"
 						},
 						"el-GR": {
 							"type": "array",
@@ -1352,6 +1680,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.es-AR.markdownDescription%"
 						},
+						"es-ES": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.es-ES.markdownDescription%"
+						},
 						"fa": {
 							"type": "array",
 							"items": {
@@ -1359,12 +1694,47 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fa.markdownDescription%"
 						},
+						"fa-IR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fa-IR.markdownDescription%"
+						},
 						"fr": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fr.markdownDescription%"
+						},
+						"fr-BE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fr-BE.markdownDescription%"
+						},
+						"fr-CA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fr-CA.markdownDescription%"
+						},
+						"fr-CH": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fr-CH.markdownDescription%"
+						},
+						"fr-FR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.fr-FR.markdownDescription%"
 						},
 						"ga-IE": {
 							"type": "array",
@@ -1387,6 +1757,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.it.markdownDescription%"
 						},
+						"it-IT": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.it-IT.markdownDescription%"
+						},
 						"ja-JP": {
 							"type": "array",
 							"items": {
@@ -1401,6 +1778,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.km-KH.markdownDescription%"
 						},
+						"nb": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.nb.markdownDescription%"
+						},
 						"nl": {
 							"type": "array",
 							"items": {
@@ -1414,6 +1798,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.nl-BE.markdownDescription%"
+						},
+						"nl-NL": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.nl-NL.markdownDescription%"
+						},
+						"no": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.no.markdownDescription%"
 						},
 						"pl-PL": {
 							"type": "array",
@@ -1492,6 +1890,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.sv.markdownDescription%"
 						},
+						"sv-SE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.enabledRules.sv-SE.markdownDescription%"
+						},
 						"ta-IN": {
 							"type": "array",
 							"items": {
@@ -1545,13 +1950,17 @@
 							"be-BY",
 							"br-FR",
 							"ca-ES",
+							"ca-ES-balear",
 							"ca-ES-valencia",
+							"crh-UA",
 							"da-DK",
 							"de",
 							"de-AT",
 							"de-CH",
 							"de-DE",
 							"de-DE-x-simple-language",
+							"de-DE-x-simple-language-DE",
+							"de-LU",
 							"el-GR",
 							"en",
 							"en-AU",
@@ -1563,15 +1972,25 @@
 							"eo",
 							"es",
 							"es-AR",
+							"es-ES",
 							"fa",
+							"fa-IR",
 							"fr",
+							"fr-BE",
+							"fr-CA",
+							"fr-CH",
+							"fr-FR",
 							"ga-IE",
 							"gl-ES",
 							"it",
+							"it-IT",
 							"ja-JP",
 							"km-KH",
+							"nb",
 							"nl",
 							"nl-BE",
+							"nl-NL",
+							"no",
 							"pl-PL",
 							"pt",
 							"pt-AO",
@@ -1583,6 +2002,7 @@
 							"sk-SK",
 							"sl-SI",
 							"sv",
+							"sv-SE",
 							"ta-IN",
 							"tl-PH",
 							"uk-UA",
@@ -1625,12 +2045,26 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.ca-ES.markdownDescription%"
 						},
+						"ca-ES-balear": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.ca-ES-balear.markdownDescription%"
+						},
 						"ca-ES-valencia": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.ca-ES-valencia.markdownDescription%"
+						},
+						"crh-UA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.crh-UA.markdownDescription%"
 						},
 						"da-DK": {
 							"type": "array",
@@ -1673,6 +2107,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.de-DE-x-simple-language.markdownDescription%"
+						},
+						"de-DE-x-simple-language-DE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.de-DE-x-simple-language-DE.markdownDescription%"
+						},
+						"de-LU": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.de-LU.markdownDescription%"
 						},
 						"el-GR": {
 							"type": "array",
@@ -1751,6 +2199,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.es-AR.markdownDescription%"
 						},
+						"es-ES": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.es-ES.markdownDescription%"
+						},
 						"fa": {
 							"type": "array",
 							"items": {
@@ -1758,12 +2213,47 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fa.markdownDescription%"
 						},
+						"fa-IR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fa-IR.markdownDescription%"
+						},
 						"fr": {
 							"type": "array",
 							"items": {
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fr.markdownDescription%"
+						},
+						"fr-BE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fr-BE.markdownDescription%"
+						},
+						"fr-CA": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fr-CA.markdownDescription%"
+						},
+						"fr-CH": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fr-CH.markdownDescription%"
+						},
+						"fr-FR": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.fr-FR.markdownDescription%"
 						},
 						"ga-IE": {
 							"type": "array",
@@ -1786,6 +2276,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.it.markdownDescription%"
 						},
+						"it-IT": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.it-IT.markdownDescription%"
+						},
 						"ja-JP": {
 							"type": "array",
 							"items": {
@@ -1800,6 +2297,13 @@
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.km-KH.markdownDescription%"
 						},
+						"nb": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.nb.markdownDescription%"
+						},
 						"nl": {
 							"type": "array",
 							"items": {
@@ -1813,6 +2317,20 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.nl-BE.markdownDescription%"
+						},
+						"nl-NL": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.nl-NL.markdownDescription%"
+						},
+						"no": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.no.markdownDescription%"
 						},
 						"pl-PL": {
 							"type": "array",
@@ -1890,6 +2408,13 @@
 								"type": "string"
 							},
 							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.sv.markdownDescription%"
+						},
+						"sv-SE": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"markdownDescription": "%ltex.i18n.configuration.ltex.hiddenFalsePositives.sv-SE.markdownDescription%"
 						},
 						"ta-IN": {
 							"type": "array",
@@ -2179,13 +2704,17 @@
 						"be-BY",
 						"br-FR",
 						"ca-ES",
+						"ca-ES-balear",
 						"ca-ES-valencia",
+						"crh-UA",
 						"da-DK",
 						"de",
 						"de-AT",
 						"de-CH",
 						"de-DE",
 						"de-DE-x-simple-language",
+						"de-DE-x-simple-language-DE",
+						"de-LU",
 						"el-GR",
 						"en",
 						"en-AU",
@@ -2197,15 +2726,25 @@
 						"eo",
 						"es",
 						"es-AR",
+						"es-ES",
 						"fa",
+						"fa-IR",
 						"fr",
+						"fr-BE",
+						"fr-CA",
+						"fr-CH",
+						"fr-FR",
 						"ga-IE",
 						"gl-ES",
 						"it",
+						"it-IT",
 						"ja-JP",
 						"km-KH",
+						"nb",
 						"nl",
 						"nl-BE",
+						"nl-NL",
+						"no",
 						"pl-PL",
 						"pt",
 						"pt-AO",
@@ -2217,6 +2756,7 @@
 						"sk-SK",
 						"sl-SI",
 						"sv",
+						"sv-SE",
 						"ta-IN",
 						"tl-PH",
 						"uk-UA",
@@ -2229,13 +2769,17 @@
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.be-BY.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.br-FR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ca-ES.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ca-ES-balear.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ca-ES-valencia.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.crh-UA.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.da-DK.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-AT.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-CH.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-DE.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-DE-x-simple-language.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-DE-x-simple-language-DE.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-LU.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.el-GR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.en.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.en-AU.markdownEnumDescription%",
@@ -2247,15 +2791,25 @@
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.eo.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.es.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.es-AR.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.es-ES.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fa.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fa-IR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-BE.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-CA.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-CH.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-FR.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ga-IE.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.gl-ES.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.it.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.it-IT.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ja-JP.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.km-KH.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nb.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nl.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nl-BE.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nl-NL.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.no.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.pl-PL.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.pt.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.pt-AO.markdownEnumDescription%",
@@ -2267,6 +2821,7 @@
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sk-SK.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sl-SI.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sv.markdownEnumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sv-SE.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ta-IN.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.tl-PH.markdownEnumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.uk-UA.markdownEnumDescription%",
@@ -2279,13 +2834,17 @@
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.be-BY.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.br-FR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ca-ES.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ca-ES-balear.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ca-ES-valencia.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.crh-UA.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.da-DK.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-AT.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-CH.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-DE.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-DE-x-simple-language.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-DE-x-simple-language-DE.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.de-LU.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.el-GR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.en.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.en-AU.enumDescription%",
@@ -2297,15 +2856,25 @@
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.eo.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.es.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.es-AR.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.es-ES.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fa.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fa-IR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-BE.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-CA.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-CH.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.fr-FR.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ga-IE.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.gl-ES.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.it.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.it-IT.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ja-JP.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.km-KH.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nb.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nl.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nl-BE.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.nl-NL.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.no.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.pl-PL.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.pt.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.pt-AO.enumDescription%",
@@ -2317,6 +2886,7 @@
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sk-SK.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sl-SI.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sv.enumDescription%",
+						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.sv-SE.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.ta-IN.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.tl-PH.enumDescription%",
 						"%ltex.i18n.configuration.ltex.additionalRules.motherTongue.uk-UA.enumDescription%",
