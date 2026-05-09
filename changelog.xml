@@ -26,6 +26,9 @@
       <action type="add" issue="ltex-plus/ltex-ls-plus#128">
         Spell check content blocks in Typst
       </action>
+      <action type="update">
+        Update to LanguageTool 6.8 (see [LT release notes](https://github.com/languagetool-org/languagetool/blob/v6.8/languagetool-standalone/CHANGES.md))
+      </action>
     </release>
     <release version="15.6.1" description="The False Positive Manipulation" date="2025-10-19">
       <action type="update">
