@@ -514,7 +514,10 @@ export default class CommandHandler {
 					enabledFileExtensions.add("tex");
 					break;
 				}
+				case "elisp":
+				case "emacs-lisp":
 				case "lisp": {
+					enabledFileExtensions.add("el");
 					enabledFileExtensions.add("lisp");
 					break;
 				}

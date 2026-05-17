@@ -67,6 +67,8 @@
 		"onLanguage:quarto",
 		"onLanguage:restructuredtext",
 		"onLanguage:rsweave",
+		"onLanguage:elisp",
+		"onLanguage:emacs-lisp",
 		"onNotebook:*"
 	],
 	"contributes": {
