@@ -14,6 +14,9 @@
   </properties>
   <body>
     <release version="15.7.0" date="upcoming">
+      <action type="add" issue="ltex-plus/ltex-ls-plus#177" due-to="Andrea Alberti (@alberti42)">
+        Record the language server name and version reported through the LSP `initialize` response (`serverInfo`, added in ltex-ls-plus#177). Falls back gracefully when connected to an older server that does not report it. Lays the groundwork for version-gating client features in the future.
+      </action>
       <action type="add" due-to="Andrea Alberti (@alberti42)">
         Accept `elisp` and `emacs-lisp` as `codeLanguageId`s alongside the existing `lisp`. Adds activation events for both IDs so the extension activates when an Elisp buffer is opened (via a third-party Emacs Lisp extension), and maps the `.el` file extension into the enabled-file-extensions set used by batch-check commands when `elisp`, `emacs-lisp`, or `lisp` is listed in `ltex.enabled`. Requires the matching server-side aliases in ltex-ls-plus.
       </action>
