@@ -3238,25 +3238,25 @@
 		"vscode:prepublish": "tsc && webpack --config .webpack.config.js --mode production && python -u tools/convertChangelog.py --xml-file changelog.xml > CHANGELOG.md"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.13",
+		"@biomejs/biome": "2.4.16",
 		"@types/mocha": "10.0.10",
-		"@types/node": "25.6.0",
+		"@types/node": "25.9.1",
 		"@types/semver": "7.7.1",
 		"@types/vscode": "1.82.0",
 		"@types/webpack": "5.28.5",
 		"@vscode/test-electron": "2.5.2",
 		"glob": "13.0.6",
-		"mocha": "11.7.5",
+		"mocha": "11.7.6",
 		"rimraf": "6.1.3",
-		"ts-loader": "9.5.7",
+		"ts-loader": "9.6.0",
 		"typescript": "6.0.3",
-		"webpack": "5.106.2",
-		"webpack-cli": "7.0.2"
+		"webpack": "5.107.2",
+		"webpack-cli": "7.0.3"
 	},
 	"dependencies": {
 		"extract-zip": "2.0.1",
-		"semver": "7.7.4",
-		"tar": "7.5.13",
+		"semver": "7.8.1",
+		"tar": "7.5.15",
 		"vscode-languageclient": "9.0.1",
 		"vscode-languageserver-protocol": "3.17.5"
 	}
