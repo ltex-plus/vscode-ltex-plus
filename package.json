@@ -2998,7 +2998,7 @@
 				"ltex.sentenceCacheSize": {
 					"type": "integer",
 					"scope": "resource",
-					"default": 2000,
+					"default": 0,
 					"markdownDescription": "%ltex.i18n.configuration.ltex.sentenceCacheSize.markdownDescription%"
 				},
 				"ltex.maxRequestSize": {
