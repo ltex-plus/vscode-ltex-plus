@@ -24,6 +24,13 @@ export class Api {
 	public languageClient: CodeLanguageClient.LanguageClient | null = null;
 	public clientOutputChannel: LoggingOutputChannel | null = null;
 	public serverOutputChannel: LoggingOutputChannel | null = null;
+	// Name and version reported by ltex-ls-plus through the LSP `initialize`
+	// response (`serverInfo`), available since ltex-ls-plus#177. The version
+	// string is SemVer 2.0.0 compliant (e.g. "18.7.0-alpha.93+2026-05-20.g...").
+	// `null` when connected to an older server that does not report it.
+	// Intended for version-gating client features in the future.
+	public ltexLsServerName: string | null = null;
+	public ltexLsServerVersion: string | null = null;
 }
 
 let dependencyManager: DependencyManager | null = null;
@@ -51,6 +58,31 @@ async function languageClientIsReady(
 		"ltex/workspaceSpecificConfiguration",
 		workspaceConfigurationRequestHandler.handle.bind(
 			workspaceConfigurationRequestHandler,
+		),
+	);
+}
+
+function recordServerInfo(
+	languageClient: CodeLanguageClient.LanguageClient,
+	api: Api,
+): void {
+	// `initializeResult` is populated once `start()` has resolved.
+	const serverInfo: { name: string; version?: string } | undefined =
+		languageClient.initializeResult?.serverInfo;
+
+	if (serverInfo == null) {
+		api.ltexLsServerName = null;
+		api.ltexLsServerVersion = null;
+		return;
+	}
+
+	api.ltexLsServerName = serverInfo.name;
+	api.ltexLsServerVersion = serverInfo.version ?? null;
+	Logger.log(
+		i18n(
+			"ltexLsReportedServerInfo",
+			serverInfo.name,
+			serverInfo.version ?? "unknown",
 		),
 	);
 }
@@ -161,6 +193,8 @@ export async function startLanguageClient(): Promise<void> {
 	commandHandler.languageClient = languageClient;
 	commandHandler.statusBarItemManager = statusBarItemManager;
 	api.languageClient = languageClient;
+
+	recordServerInfo(languageClient, api);
 
 	return Promise.resolve();
 }

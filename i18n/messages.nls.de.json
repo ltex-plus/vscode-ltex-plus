@@ -15,6 +15,7 @@
 	"findingAllDocumentsInWorkspace": "Finde alle Dokumente im Arbeitsbereich ...",
 	"ltexIsChecking": "LTeX prüft ...",
 	"ltexLanguageServer": "LTeX Language Server",
+	"ltexLsReportedServerInfo": "Mit Sprachserver '{0}' Version '{1}' verbunden.",
 	"ltexLsWasAlreadyStarted": "ltex-ls wurde bereits gestarted. Es wird keine weitere Instanz gestartet.",
 	"ltexNotInitialized": "LTeX wurde aufgrund eines vorhergehenden Fehlers nicht initialisiert.",
 	"ltexReady": "LTeX bereit",

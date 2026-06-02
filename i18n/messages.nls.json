@@ -58,6 +58,7 @@
 	"ltexIsChecking": "LTeX is checking...",
 	"ltexLanguageServer": "LTeX Language Server",
 	"ltexLsDidNotPrintExpectVersionInformation": "ltex-ls did not print expected version information to stdout.",
+	"ltexLsReportedServerInfo": "Connected to language server '{0}' version '{1}'.",
 	"ltexLsFoundIn": "ltex-ls found in '{0}'.",
 	"ltexLsInfo": "Info about ltex-ls:",
 	"ltexLsTerminatedDueToSignal": "ltex-ls terminated due to signal '{0}'.",
