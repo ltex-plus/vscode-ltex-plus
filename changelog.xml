@@ -13,7 +13,7 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
-    <release version="15.7.0" date="upcoming">
+    <release version="15.7.0" date="2026-06-13">
       <action type="add" issue="ltex-plus/ltex-ls-plus#176">
         Add settings `ltex.maxRequestSize`, `ltex.paragraphCacheTtlMinutes`, and `ltex.paragraphCacheEnabled` to control batched request size and the new per-paragraph result cache. Change the default of `ltex.sentenceCacheSize` from `2000` to `0`, disabling LanguageTool's own `ResultCache`, which is now superseded by the per-paragraph cache and only adds CPU and memory overhead for the edit loop.
       </action>
