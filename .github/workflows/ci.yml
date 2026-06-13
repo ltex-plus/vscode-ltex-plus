@@ -160,8 +160,11 @@ jobs:
         run: "python -u tools/createOfflinePackages.py"
 
       - name: "Create GitHub Release"
+        # Stage as a draft so a maintainer can review the release and its assets,
+        # then publish it manually (uncheck the draft box on the release page).
         run: >
           gh release create ${{ github.ref_name }}
+          --draft
           --prerelease=${{ env.VSCODE_LTEX_IS_PRERELEASE }}
           --title='${{ env.VSCODE_LTEX_VERSION }}'
           --notes='${{ env.VSCODE_LTEX_CHANGELOG }}'
