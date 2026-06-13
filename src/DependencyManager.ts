@@ -39,25 +39,25 @@ export default class DependencyManager {
 		"https://ltex-plus.github.io/" +
 		"ltex-plus/vscode-ltex-plus/installation-usage-vscode-ltex-plus.html#offline-installation";
 
-	private static readonly _toBeDownloadedLtexLsTag: string = "18.6.1";
-	private static readonly _toBeDownloadedLtexLsVersion: string = "18.6.1";
+	private static readonly _toBeDownloadedLtexLsTag: string = "18.7.0";
+	private static readonly _toBeDownloadedLtexLsVersion: string = "18.7.0";
 	private static readonly _toBeDownloadedLtexLsHashDigests: {
 		[fileName: string]: string;
 	} = {
-		"ltex-ls-plus-18.6.1-linux-aarch64.tar.gz":
-			"fe8f92e8b341fee667faa891e31bea38fee7237c1181e99ae09db24bf9a22766",
-		"ltex-ls-plus-18.6.1-linux-x64.tar.gz":
-			"32ca6ac29fcfa58bf037cc4f1c8609fe72f690597a25faa1dbcf4909b73aec63",
-		"ltex-ls-plus-18.6.1-mac-aarch64.tar.gz":
-			"9ca9e42fe7b89c60d4ce2de1a82f4bf97d805737c37d2428d3d5190756f108a3",
-		"ltex-ls-plus-18.6.1-mac-x64.tar.gz":
-			"5f22b2614bef42142c096a0064711f4504e51122d4d380d13735a599231b9955",
-		"ltex-ls-plus-18.6.1-windows-aarch64.zip":
-			"5cdcdd212dcd26c95de2de173956398edf1226319b0ad82fedbb599d79154e4d",
-		"ltex-ls-plus-18.6.1-windows-x64.zip":
-			"783c8191142069fb877e6435a5927f71444ce003103301131c9b3485b86ffa01",
-		"ltex-ls-plus-18.6.1.tar.gz":
-			"621b93d592a979ccac0380ee32b824a3becbd2dd157bd55a9d75876d7f29deaa",
+		"ltex-ls-plus-18.7.0-linux-aarch64.tar.gz":
+			"3a92a4dd22ea87ff5d4de4891581ff41bacc7210256ebe9d0e496f1da8382f54",
+		"ltex-ls-plus-18.7.0-linux-x64.tar.gz":
+			"1e16df6c578dc76ff97d644445d126ba6fba5c2e8e174178ab86372652fd7612",
+		"ltex-ls-plus-18.7.0-mac-aarch64.tar.gz":
+			"2255eadb7be3b58b93d17efcd6fb10809e40e2b28289fdb1af966a874dac13e4",
+		"ltex-ls-plus-18.7.0-mac-x64.tar.gz":
+			"90cf632a89604172b8170701bd04745dc73de4ac48d2eb4ced879bed532eaa4f",
+		"ltex-ls-plus-18.7.0-windows-aarch64.zip":
+			"b7d88424de33c45ba871c329b18d85913eb60eeaa9e74338e00a8129283e9358",
+		"ltex-ls-plus-18.7.0-windows-x64.zip":
+			"24819298d9fd0130a4375030bcc6a7ada83d06ced453f524331de688904323ec",
+		"ltex-ls-plus-18.7.0.tar.gz":
+			"cf5e5aee2952570e3740c07860ef2a43c992e8693142469985d32b21887ac658",
 	};
 
 	public constructor(context: Code.ExtensionContext) {
