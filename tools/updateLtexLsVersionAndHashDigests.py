@@ -88,18 +88,18 @@ def main() -> None:
     print(f"Hash digest is '{hashDigest}'.")
     hashDigests.append(hashDigest)
 
-  hashDigestsTypescript = "".join(f"    '{x}':\n      '{y}',\n"
+  hashDigestsTypescript = "".join(f'\t\t"{x}":\n\t\t\t"{y}",\n'
       for x, y in zip(assetFileNames, hashDigests))
 
   print("Writing version and hash digests to 'src/DependencyManager.ts'...")
   dependencyManagerFilePath = common.repoDirPath.joinpath("src", "DependencyManager.ts")
   with open(dependencyManagerFilePath, "r") as f: dependencyManagerTypescript = f.read()
-  dependencyManagerTypescript = re.sub(r"(_toBeDownloadedLtexLsTag: string =\n *').*?(';\n)",
+  dependencyManagerTypescript = re.sub(r'(_toBeDownloadedLtexLsTag: string = ").*?(";)',
       rf"\g<1>{ltexLsTag}\g<2>", dependencyManagerTypescript)
-  dependencyManagerTypescript = re.sub(r"(_toBeDownloadedLtexLsVersion: string =\n *').*?(';\n)",
+  dependencyManagerTypescript = re.sub(r'(_toBeDownloadedLtexLsVersion: string = ").*?(";)',
       rf"\g<1>{ltexLsVersion}\g<2>", dependencyManagerTypescript)
   dependencyManagerTypescript = re.sub(
-      r"(_toBeDownloadedLtexLsHashDigests: \{\[fileName: string\]: string\} = \{\n).*?(  \};\n)",
+      r"(_toBeDownloadedLtexLsHashDigests: \{.*? = \{\n).*?(\t\};\n)",
       fr"\g<1>{hashDigestsTypescript}\g<2>", dependencyManagerTypescript, flags=re.DOTALL)
   with open(dependencyManagerFilePath, "w") as f: f.write(dependencyManagerTypescript)
 
