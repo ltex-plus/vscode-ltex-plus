@@ -15,6 +15,11 @@
   <body>
     <release version="15.8.0" date="upcoming">
     </release>
+    <release version="15.7.1" date="2026-06-13">
+      <action type="update" issue="ltex-plus/ltex-ls-plus#157">
+        Update to ltex-ls-plus 18.7.0. Version 15.7.0 was published while still bundling ltex-ls-plus 18.6.1, so its server-side improvements were unavailable; 15.7.1 ships the intended 18.7.0 server.
+      </action>
+    </release>
     <release version="15.7.0" date="2026-06-13">
       <action type="add" issue="ltex-plus/ltex-ls-plus#176">
         Add settings `ltex.maxRequestSize`, `ltex.paragraphCacheTtlMinutes`, and `ltex.paragraphCacheEnabled` to control batched request size and the new per-paragraph result cache. Change the default of `ltex.sentenceCacheSize` from `2000` to `0`, disabling LanguageTool's own `ResultCache`, which is now superseded by the per-paragraph cache and only adds CPU and memory overhead for the edit loop.
