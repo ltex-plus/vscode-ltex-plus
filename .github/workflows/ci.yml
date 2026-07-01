@@ -40,7 +40,7 @@ jobs:
 
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v6"
+        uses: "actions/checkout@v7"
 
       - name: "Set up Node.js"
         uses: "actions/setup-node@v6"
@@ -97,7 +97,7 @@ jobs:
 
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v6"
+        uses: "actions/checkout@v7"
 
       - name: "Set up Python"
         uses: "actions/setup-python@v6"
@@ -125,7 +125,7 @@ jobs:
 
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v6"
+        uses: "actions/checkout@v7"
 
       - name: "Set up Node.js"
         uses: "actions/setup-node@v6"
@@ -202,7 +202,7 @@ jobs:
 
     steps:
       - name: "Checkout Repository"
-        uses: "actions/checkout@v6"
+        uses: "actions/checkout@v7"
         with:
           ref: "${{ github.event.release.tag_name }}"
 
