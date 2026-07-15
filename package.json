@@ -2995,6 +2995,15 @@
 					"default": 2048,
 					"markdownDescription": "%ltex.i18n.configuration.ltex.java.maximumHeapSize.markdownDescription%"
 				},
+				"ltex.java.additionalOpts": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"scope": "window",
+					"default": [],
+					"markdownDescription": "%ltex.i18n.configuration.ltex.java.additionalOpts.markdownDescription%"
+				},
 				"ltex.sentenceCacheSize": {
 					"type": "integer",
 					"scope": "resource",

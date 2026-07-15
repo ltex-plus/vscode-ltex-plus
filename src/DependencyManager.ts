@@ -669,6 +669,11 @@ export default class DependencyManager {
 			javaArguments.push(`-Xms${initialJavaHeapSize}m`);
 		if (maximumJavaHeapSize != null)
 			javaArguments.push(`-Xmx${maximumJavaHeapSize}m`);
+		const additionalJavaOpts: string[] | undefined = workspaceConfig.get(
+			"java.additionalOpts",
+		);
+		if (additionalJavaOpts != null && additionalJavaOpts.length > 0)
+			javaArguments.push(...additionalJavaOpts);
 		env.JAVA_OPTS = javaArguments.join(" ");
 
 		if (DependencyManager._isWindows) {
