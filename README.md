@@ -51,7 +51,7 @@ LT<sub>E</sub>X is a fork of the abandoned [LanguageTool for Visual Studio Code 
 ## Requirements
 
 - 64-bit Linux, Mac, or Windows operating system
-- [VS Code 1.82.0 or newer](https://code.visualstudio.com/)
+- [VS Code 1.91.0 or newer](https://code.visualstudio.com/)
 - Optional:
   - If you want to check documents written in a markup language that VS Code does not support out-of-the-box (e.g., L<sup>A</sup>T<sub>E</sub>X), install an extension that provides support for that language (e.g., [LaTeX Workshop Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)) in addition to this extension.
 

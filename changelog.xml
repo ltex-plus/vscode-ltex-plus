@@ -13,7 +13,10 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
-    <release version="15.8.0" date="upcoming">
+    <release version="16.0.0" date="upcoming">
+      <action type="update">
+        Update to vscode-languageclient 10.1.0 and vscode-languageserver-protocol 3.18.2. This raises the minimum supported VS Code version to 1.91.0. As this is considered a breaking change, the next release will be 16.0.0.
+      </action>
     </release>
     <release version="15.7.1" date="2026-06-13">
       <action type="update" issue="ltex-plus/ltex-ls-plus#157">

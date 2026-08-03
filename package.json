@@ -1,7 +1,7 @@
 {
 	"name": "vscode-ltex-plus",
 	"displayName": "LTeX+ – grammar/spell checking using LanguageTool",
-	"version": "15.8.0-alpha",
+	"version": "16.0.0-alpha",
 	"description": "Grammar/spell checker using LanguageTool with support for LaTeX, Markdown, and others",
 	"icon": "img/logo-ltex.png",
 	"author": "Julian Valentin",
@@ -24,7 +24,7 @@
 		"url": "https://ko-fi.com/spitzerd"
 	},
 	"engines": {
-		"vscode": "^1.82.0"
+		"vscode": "^1.91.0"
 	},
 	"galleryBanner": {
 		"color": "#00a0dc",
@@ -3251,7 +3251,7 @@
 		"@types/mocha": "10.0.10",
 		"@types/node": "26.1.2",
 		"@types/semver": "7.7.1",
-		"@types/vscode": "1.82.0",
+		"@types/vscode": "1.91.0",
 		"@types/webpack": "5.28.5",
 		"@vscode/test-electron": "3.1.0",
 		"glob": "13.0.6",
@@ -3266,7 +3266,7 @@
 		"extract-zip": "2.0.1",
 		"semver": "7.8.5",
 		"tar": "7.5.22",
-		"vscode-languageclient": "9.0.1",
+		"vscode-languageclient": "10.1.0",
 		"vscode-languageserver-protocol": "3.18.2"
 	}
 }

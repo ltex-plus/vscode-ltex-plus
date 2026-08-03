@@ -15,9 +15,9 @@ type Entry = {
 	text: string;
 };
 
-export default class LoggingOutputChannel implements Code.OutputChannel {
+export default class LoggingOutputChannel implements Code.LogOutputChannel {
 	public readonly name: string;
-	private _outputChannel: Code.OutputChannel;
+	private _outputChannel: Code.LogOutputChannel;
 	private _entries: Entry[];
 	private _onAppendEventEmitter: EventEmitter<string>;
 
@@ -25,7 +25,9 @@ export default class LoggingOutputChannel implements Code.OutputChannel {
 
 	public constructor(name: string) {
 		this.name = name;
-		this._outputChannel = Code.window.createOutputChannel(name);
+		this._outputChannel = Code.window.createOutputChannel(name, {
+			log: true,
+		});
 		this._entries = [];
 		this._onAppendEventEmitter = new EventEmitter<string>();
 	}
@@ -75,6 +77,34 @@ export default class LoggingOutputChannel implements Code.OutputChannel {
 
 	public onAppend(listener: (text: string) => void): void {
 		this._onAppendEventEmitter.event(listener);
+	}
+
+	public get logLevel(): Code.LogLevel {
+		return this._outputChannel.logLevel;
+	}
+
+	public get onDidChangeLogLevel(): Code.Event<Code.LogLevel> {
+		return this._outputChannel.onDidChangeLogLevel;
+	}
+
+	public trace(message: string, ...args: any[]): void {
+		this._outputChannel.trace(message, ...args);
+	}
+
+	public debug(message: string, ...args: any[]): void {
+		this._outputChannel.debug(message, ...args);
+	}
+
+	public info(message: string, ...args: any[]): void {
+		this._outputChannel.info(message, ...args);
+	}
+
+	public warn(message: string, ...args: any[]): void {
+		this._outputChannel.warn(message, ...args);
+	}
+
+	public error(error: string | Error, ...args: any[]): void {
+		this._outputChannel.error(error, ...args);
 	}
 
 	public clear(): void {
