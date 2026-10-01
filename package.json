@@ -3247,7 +3247,7 @@
 		"vscode:prepublish": "tsc && webpack --config .webpack.config.js --mode production && python -u tools/convertChangelog.py --xml-file changelog.xml > CHANGELOG.md"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.11",
+		"@biomejs/biome": "2.5.14",
 		"@types/mocha": "10.0.10",
 		"@types/node": "26.6.3",
 		"@types/semver": "7.8.0",
