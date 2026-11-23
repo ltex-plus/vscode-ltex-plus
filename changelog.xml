@@ -13,6 +13,11 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
+    <release version="16.1.0" date="upcoming">
+      <action type="add" due-to="Andrea Alberti (@alberti42)">
+        Declare the settings `ltex.preferredVariants`, `ltex.languageToolHttpServerOfflineFallback` and `ltex.languageToolHttpServerTimeoutSeconds`, which ltex-ls-plus reads since 18.7.0 and 19.0.0. They now appear in the settings UI with a description, and VS Code no longer reports them as unknown settings.
+      </action>
+    </release>
     <release version="16.0.0" date="2026-11-23">
       <action type="update">
         Update to ltex-ls-plus 19.0.0. See [ltex-ls-plus release notes](https://github.com/ltex-plus/ltex-ls-plus/releases/tag/19.0.0).

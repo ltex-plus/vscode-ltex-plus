@@ -379,6 +379,24 @@
 					],
 					"markdownDescription": "%ltex.i18n.configuration.ltex.language.markdownDescription%"
 				},
+				"ltex.preferredVariants": {
+					"type": "array",
+					"scope": "resource",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"en-US",
+						"de-DE",
+						"pt-BR"
+					],
+					"markdownDescription": "%ltex.i18n.configuration.ltex.preferredVariants.markdownDescription%",
+					"examples": [
+						[
+							"en-GB"
+						]
+					]
+				},
 				"ltex.dictionary": {
 					"type": "object",
 					"scope": "resource",
@@ -2925,6 +2943,18 @@
 						"https://api.languagetoolplus.com",
 						"http://localhost:8081"
 					]
+				},
+				"ltex.languageToolHttpServerOfflineFallback": {
+					"type": "boolean",
+					"scope": "window",
+					"default": false,
+					"markdownDescription": "%ltex.i18n.configuration.ltex.languageToolHttpServerOfflineFallback.markdownDescription%"
+				},
+				"ltex.languageToolHttpServerTimeoutSeconds": {
+					"type": "integer",
+					"scope": "window",
+					"default": 60,
+					"markdownDescription": "%ltex.i18n.configuration.ltex.languageToolHttpServerTimeoutSeconds.markdownDescription%"
 				},
 				"ltex.languageToolOrg.username": {
 					"type": "string",
