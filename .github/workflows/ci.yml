@@ -122,6 +122,11 @@ jobs:
     runs-on: "ubuntu-latest"
     permissions:
       contents: write
+      # Needed by actions/attest: the OIDC token for the Sigstore signing
+      # certificate, storing the attestation, and the artifact storage record.
+      id-token: write
+      attestations: write
+      artifact-metadata: write
 
     steps:
       - name: "Checkout Repository"
@@ -173,6 +178,21 @@ jobs:
 
       - name: "Build Offline Packages"
         run: "python -u tools/createOfflinePackages.py"
+
+      - name: "Attest Build Provenance"
+        # Record that these files were built by this workflow run from this commit.
+        # Anyone can check a downloaded file with
+        # `gh attestation verify <file> --repo ltex-plus/vscode-ltex-plus`.
+        uses: "actions/attest@v4"
+        with:
+          subject-path: |
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}.vsix
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}-offline-linux-x64.vsix
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}-offline-mac-x64.vsix
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}-offline-windows-x64.vsix
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}-offline-linux-aarch64.vsix
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}-offline-mac-aarch64.vsix
+            vscode-ltex-plus-${{ env.VSCODE_LTEX_VERSION }}-offline-windows-aarch64.vsix
 
       - name: "Create GitHub Release"
         # Stage as a draft so a maintainer can review the release and its assets,
