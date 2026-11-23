@@ -15,7 +15,10 @@
   <body>
     <release version="16.0.0" date="upcoming">
       <action type="update">
-        Update to vscode-languageclient 10.1.0 and vscode-languageserver-protocol 3.18.2. This raises the minimum supported VS Code version to 1.101.0. As this is considered a breaking change, the next release will be 16.0.0.
+        Update to ltex-ls-plus 19.0.0. See [ltex-ls-plus release notes](https://github.com/ltex-plus/ltex-ls-plus/releases/tag/19.0.0).
+      </action>
+      <action type="update">
+        Update to vscode-languageclient 11.0.0 and vscode-languageserver-protocol 3.18.5. This raises the minimum supported VS Code version to 1.101.0. As this is considered a breaking change, the next release will be 16.0.0.
       </action>
     </release>
     <release version="15.7.1" date="2026-06-13">
