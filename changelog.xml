@@ -13,7 +13,7 @@
     <author>Julian Valentin, Daniel Spitzer, LTeX+ Development Community</author>
   </properties>
   <body>
-    <release version="16.0.0" date="upcoming">
+    <release version="16.0.0" date="2026-11-23">
       <action type="update">
         Update to ltex-ls-plus 19.0.0. See [ltex-ls-plus release notes](https://github.com/ltex-plus/ltex-ls-plus/releases/tag/19.0.0).
       </action>
